@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), local("DMSans"), url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), local("DMSans"), url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Regular.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-style: italic;
+  src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Italic.woff") format("woff"); }
+
+body {
+  font-family: 'DM sans';
+  font-weight: 400; }
