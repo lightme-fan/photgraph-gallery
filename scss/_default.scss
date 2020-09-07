@@ -1,6 +1,18 @@
 @import 'variables/fonts';
+@import 'variables/variables';
+@import 'custom_property';
+
 
 body {
   font-family: 'DM sans';
   font-weight: 400;
 }
+
+ul {
+  @include reset-list;
+}
+
+a {
+  text-decoration: var(--reset-anchor);
+}
+

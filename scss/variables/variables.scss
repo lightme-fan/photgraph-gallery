@@ -1,7 +1,8 @@
 // List
-@mixin list {
-  list-style: none;
+@mixin reset-list {
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 // Display flex
@@ -36,3 +37,19 @@ $margin: 1rem;
 $padding: 1rem;
 
 //
+$header-bg-color: #434CCC;
+
+// Logo
+$logo-base-color: #ffffff;
+
+$default-bg-color: #ffffff;
+
+$default-width: 100%;
+$default-height: 100%;
+
+$default-top: 0;
+$default-left: 0;
+$default-right: 0;
+$default-bottom: 0;
+
+$visibility: hidden;

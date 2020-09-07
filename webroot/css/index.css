@@ -22,6 +22,72 @@
   font-style: italic;
   src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Italic.woff") format("woff"); }
 
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
 body {
   font-family: 'DM sans';
   font-weight: 400; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: var(--reset-anchor); }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.portfolio_heading {
+  background-color: #434CCC; }
+
+.portfolio_logo_link {
+  font-family: 'DM Serif Display';
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.portfolio_menu_navigation {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  background-color: #ffffff;
+  padding-inline-start: calc(var(--base-padding) * 2);
+  padding-block-start: var(--base-padding);
+  transform: translateX(-100%);
+  transition: transform .2s; }
+
+input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
+  transform: translateX(0%); }
+
+.menu_checkbox {
+  visibility: hidden; }
+
+.label_menu {
+  color: transparent; }
+
+.label_menu::before {
+  content: ''; }

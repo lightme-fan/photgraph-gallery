@@ -1,0 +1,9 @@
+@import 'variables/variables';
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility;
+}
