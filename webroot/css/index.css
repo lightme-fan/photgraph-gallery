@@ -38,7 +38,8 @@
 
 body {
   font-family: 'DM sans';
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0rem; }
 
 ul {
   margin: 0;
@@ -56,38 +57,76 @@ a {
   --base-visibility: $visibility; }
 
 .portfolio_heading {
-  background-color: #434CCC; }
+  background-color: #434CCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: -1.5rem; }
+
+.portfolio_logo {
+  margin: 0rem; }
 
 .portfolio_logo_link {
   font-family: 'DM Serif Display';
   font-size: 24px;
-  line-height: 32px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #ffffff; }
 
 .portfolio_menu_navigation {
-  width: 120px;
+  width: 220px;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
   bottom: 0;
+  right: 0;
+  top: 0;
   left: 0;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-  z-index: 1;
+  z-index: 2;
   background-color: #ffffff;
   padding-inline-start: calc(var(--base-padding) * 2);
   padding-block-start: var(--base-padding);
   transform: translateX(-100%);
   transition: transform .2s; }
 
+.portfolio_list_menu {
+  text-align: center; }
+
+.portfolio_list_menu_item {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
 input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   transform: translateX(0%); }
+
+.portfolio_list_menu_link {
+  color: #000000; }
+
+[type="checkbox"]:checked ~ main {
+  z-index: 1; }
 
 .menu_checkbox {
   visibility: hidden; }
 
 .label_menu {
-  color: transparent; }
+  color: transparent;
+  position: relative; }
 
 .label_menu::before {
-  content: ''; }
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  top: calc(100% / 4);
+  background-image: url("../svg/menu.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }

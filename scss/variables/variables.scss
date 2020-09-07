@@ -29,6 +29,16 @@
   }
 }
 
+// Position
+@mixin absolute-positon {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  bottom: 0;
+  right: 0;
+}
+$parent-position: relative;
+
 // Anchor
 $anchor-text-decoration: none;
 
@@ -36,8 +46,15 @@ $anchor-text-decoration: none;
 $margin: 1rem;
 $padding: 1rem;
 
-//
+$text-transform: uppercase;
+
 $header-bg-color: #434CCC;
+$logo-font-size: 24px;
+$logo-line-height: 24px;
+
+$base-color: #000000;
+
+$text-align: center;
 
 // Logo
 $logo-base-color: #ffffff;
