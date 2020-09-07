@@ -9,6 +9,14 @@ body {
   margin: $margin * 0;
 }
 
+main {
+  padding: $padding;
+}
+
+footer {
+  padding: $padding;
+}
+
 ul {
   @include reset-list;
 }

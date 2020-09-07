@@ -41,6 +41,12 @@ body {
   font-weight: 400;
   margin: 0rem; }
 
+main {
+  padding: 1rem; }
+
+footer {
+  padding: 1rem; }
+
 ul {
   margin: 0;
   padding: 0;
