@@ -25,7 +25,7 @@
 .portfolio_menu_navigation {
   width: 220px;
   height: $default-width;
-  @include absolute-positon;
+  @include absolute-position;
   top: 0;
   left: 0;
   box-shadow: 0px 0px 50px rgba(0,0,0,.25);
@@ -72,7 +72,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   display: block;
   width: 20px;
   height: 20px;
-  @include absolute-positon;
+  @include absolute-position;
   top: calc(100% / 4);
   @include background('../svg/menu.svg');
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
   font-weight: 400;
@@ -136,3 +137,43 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.portfolio_masthead__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.portfolio_masthead__heading {
+  font-family: 'DM Serif Display';
+  font-size: 52px;
+  line-height: 64px;
+  order: 2; }
+
+.portfolio_masthead__intro {
+  font-size: 18px;
+  line-height: 32px;
+  order: 3; }
+
+.portfolio_masthead_back {
+  position: relative;
+  padding-left: 2rem;
+  order: 1; }
+
+.portfolio_masthead_back::before {
+  content: '←';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0; }
