@@ -63,8 +63,10 @@ a {
   --logo-color: $logo-base-color;
   --base-visibility: $visibility; }
 
+.portfolio_heading {
+  background-color: #434CCC; }
+
 .portfolio_heading__container {
-  background-color: #434CCC;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,6 +139,35 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
+
+@media (min-width: 960px) {
+  .portfolio_heading__container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between; }
+  .portfolio_logo_link {
+    font-size: 40px;
+    line-height: 48px; }
+  .portfolio_menu_navigation {
+    transform: translateX(0);
+    background-color: transparent;
+    position: unset;
+    order: 2;
+    width: 50%;
+    height: 0;
+    padding: 0rem; }
+  .portfolio_list_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around; }
+  .label_menu {
+    visibility: hidden; }
+  .portfolio_list_menu_link {
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff; } }
 
 :root {
   --reset-anchor: $anchor-text-decoration;

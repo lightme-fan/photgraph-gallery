@@ -2,8 +2,11 @@
 @import 'variables/fonts';
 @import 'custom_property';
 
-.portfolio_heading__container {
+.portfolio_heading {
   background-color: $header-bg-color;
+}
+
+.portfolio_heading__container {
   @include displayFlex;
   padding: $padding;
   margin-top: $margin * -(3 / 2);
@@ -75,4 +78,42 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   @include absolute-position;
   top: calc(100% / 4);
   @include background('../svg/menu.svg');
+}
+
+@media (min-width: 960px) {
+
+  .portfolio_heading__container {
+    @include container;
+    justify-content: space-between;
+  }
+
+  .portfolio_logo_link {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .portfolio_menu_navigation {  
+    transform: translateX(0);
+    background-color: transparent;
+    position: unset;
+    order: 2;
+    width: 50%;
+    height: 0;
+    padding: $padding * 0;
+  }
+
+  .portfolio_list_menu {
+    @include displayFlex;
+    justify-content: space-around;
+  }
+
+  .label_menu {
+    visibility: hidden;
+  }
+
+  .portfolio_list_menu_link {
+    font-weight: 700;
+    line-height: 24px;
+    color: $logo-base-color;
+  }
 }
