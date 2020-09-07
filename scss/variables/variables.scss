@@ -1,0 +1,38 @@
+// List
+@mixin list {
+  list-style: none;
+  padding: 0;
+}
+
+// Display flex
+@mixin displayFlex($display: flex, $direction: row, $justifyContent: space-between) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+}
+
+// Mixing for container
+@mixin container {
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// backgroung mixing
+@mixin background($imgPath, $position:50% 50%, $repeat: no-repeat, $size: cover) {
+  background: {
+      image: url($imgPath);
+      position: $position;
+      repeat: $repeat;
+      size: $size
+  }
+}
+
+// Anchor
+$anchor-text-decoration: none;
+
+// Margin and padding 
+$margin: 1rem;
+$padding: 1rem;
+
+//
