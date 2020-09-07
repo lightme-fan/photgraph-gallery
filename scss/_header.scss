@@ -2,7 +2,7 @@
 @import 'variables/fonts';
 @import 'custom_property';
 
-.portfolio_heading {
+.portfolio_heading__container {
   background-color: $header-bg-color;
   @include displayFlex;
   padding: $padding;

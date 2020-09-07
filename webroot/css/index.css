@@ -62,7 +62,7 @@ a {
   --logo-color: $logo-base-color;
   --base-visibility: $visibility; }
 
-.portfolio_heading {
+.portfolio_heading__container {
   background-color: #434CCC;
   display: flex;
   flex-direction: row;
