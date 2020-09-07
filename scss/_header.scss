@@ -81,7 +81,6 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 }
 
 @media (min-width: 960px) {
-
   .portfolio_heading__container {
     @include container;
     justify-content: space-between;

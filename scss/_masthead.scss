@@ -5,6 +5,7 @@
 .portfolio_masthead__container {
   @include displayFlex;
   flex-direction: column;
+  padding-top: 31px;
 }
 
 .portfolio_masthead__heading {
@@ -32,4 +33,21 @@
   @include absolute-position;
   left: 0;
   top: 0;
+}
+
+@media (min-width: 960px) {
+  .portfolio_masthead__container {
+    @include container;
+  }
+
+  .portfolio_masthead__heading {
+    font-size: 72px;
+    line-height: 80px;
+    white-space: pre-line; 
+  }
+
+  .portfolio_masthead__intro {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
