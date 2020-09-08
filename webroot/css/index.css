@@ -465,11 +465,13 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0rem;
     align-items: center; }
   .porfolio_builders {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   .porfolio_footer__home {
-    padding-bottom: 0rem; } }
+    padding-bottom: 0rem; }
+  .portfolio_list_home {
+    color: #000000;
+    opacity: 0.5; } }

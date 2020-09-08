@@ -71,7 +71,6 @@
 
   .porfolio_footer__description {
     @include displayFlex;
-    padding-bottom: $padding * 0;
     align-items: center;
   }
 
@@ -81,5 +80,10 @@
 
   .porfolio_footer__home {
     padding-bottom: $padding * 0;
+  }
+
+  .portfolio_list_home {
+    color: $base-color;
+    opacity: 0.5;
   }
 }
