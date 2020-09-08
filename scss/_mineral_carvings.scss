@@ -1,0 +1,40 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'custom_property';
+
+.portfolio_carvings {
+  padding-top: 75px;
+}
+
+.portfolio_carving__heading {
+  font-family: 'DM Serif Display';
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.portfolio_carving__summary {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.portfolio_carving_description {
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+.portfolio_carving__sharing {
+  padding-top: $padding * 2;
+}
+
+@media (min-width: 960px) {
+  .portfolio_carvings {
+    padding-top: 0;
+  }
+
+  .portfolio_carving__heading {
+    font-size: 52px;
+    line-height: 64px;
+    margin-top: $margin * 0;
+  }
+  
+}

@@ -231,7 +231,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --base-visibility: $visibility; }
 
 .portfolio_metada_heading {
-  visibility: hidden; }
+  display: none; }
 
 .portfolio_metadata_list {
   display: grid;
@@ -246,3 +246,78 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 .portfolio_metadata__item_text {
   font-weight: 700;
   line-height: 24px; }
+
+@media (min-width: 960px) {
+  .portfolio_meatadata__container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    gap: 157px; } }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.portfolio_carvings {
+  padding-top: 75px; }
+
+.portfolio_carving__heading {
+  font-family: 'DM Serif Display';
+  font-size: 40px;
+  line-height: 48px; }
+
+.portfolio_carving__summary {
+  font-size: 18px;
+  line-height: 32px; }
+
+.portfolio_carving_description {
+  line-height: 24px;
+  opacity: 0.5; }
+
+.portfolio_carving__sharing {
+  padding-top: 2rem; }
+
+@media (min-width: 960px) {
+  .portfolio_carvings {
+    padding-top: 0; }
+  .portfolio_carving__heading {
+    font-size: 52px;
+    line-height: 64px;
+    margin-top: 0rem; } }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.facebook {
+  color: transparent;
+  background-image: url("../web_icons/icon_facebook.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto; }
+
+.twitter {
+  color: transparent;
+  background-image: url("../web_icons/icon_twitter.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto; }
+
+.instegram {
+  color: transparent;
+  background-image: url("../web_icons/icon_instagram.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto; }

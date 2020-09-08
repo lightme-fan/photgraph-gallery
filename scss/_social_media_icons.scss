@@ -1,0 +1,21 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'custom_property';
+
+.facebook {
+  color: transparent;
+  @include background('../web_icons/icon_facebook.svg');
+  background-size: auto;
+}
+
+.twitter {
+  color: transparent;
+  @include background('../web_icons/icon_twitter.svg');
+  background-size: auto;
+}
+
+.instegram {
+  color: transparent;
+  @include background('../web_icons/icon_instagram.svg');
+  background-size: auto;
+}

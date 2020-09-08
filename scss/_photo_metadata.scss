@@ -3,7 +3,7 @@
 @import 'custom_property';
 
 .portfolio_metada_heading {
-  visibility: $visibility;
+  display: none;
 }
 
 .portfolio_metadata_list {
@@ -19,4 +19,12 @@
 .portfolio_metadata__item_text {
   font-weight: 700;
   line-height: 24px;
+}
+
+@media (min-width: 960px) {
+  .portfolio_meatadata__container {
+    @include container;
+    @include displayGrid;
+    gap: 157px;
+  }
 }
