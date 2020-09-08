@@ -61,13 +61,13 @@
 body {
   font-family: 'DM sans';
   font-weight: 400;
-  margin: 0rem; }
+  margin: calc(var(--base-margin) * 0); }
 
 .container {
-  padding: 1rem; }
+  padding: var(--base-padding); }
 
 footer {
-  padding: 1rem; }
+  padding: var(--base-padding); }
 
 ul {
   margin: 0;
@@ -112,7 +112,7 @@ a {
   margin-top: -1.5rem; }
 
 .portfolio_logo {
-  margin: calc(var(--basemargin) * 0); }
+  margin: calc(var(--base-margin) * 0); }
 
 .portfolio_logo_link {
   font-family: 'DM Serif Display';

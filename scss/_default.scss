@@ -7,15 +7,15 @@
 body {
   font-family: 'DM sans';
   font-weight: 400;
-  margin: $margin * 0;
+  margin: calc(var(--base-margin) * 0);
 }
 
 .container {
-  padding: $padding;
+  padding: var(--base-padding);
 }
 
 footer {
-  padding: $padding;
+  padding: var(--base-padding);
 }
 
 ul {
