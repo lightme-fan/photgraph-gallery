@@ -18,7 +18,7 @@
 }
 
 .portfolio_metadata__item {
-  opacity: 0.5;
+  opacity: var(--opacity);
 }
 
 .portfolio_metadata__item_text {

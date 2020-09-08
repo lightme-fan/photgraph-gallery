@@ -359,7 +359,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   column-gap: calc(40px * 2); }
 
 .portfolio_metadata__item {
-  opacity: 0.5; }
+  opacity: var(--opacity); }
 
 .portfolio_metadata__item_text {
   font-weight: 700;
