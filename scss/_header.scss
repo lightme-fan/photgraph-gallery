@@ -4,37 +4,37 @@
 @import 'custom_property';
 
 .portfolio_heading {
-  background-color: $header-bg-color;
+  background-color: var(--header-bg);
 }
 
 .portfolio_heading__container {
   @include displayFlex;
-  padding: $padding;
+  padding: var(--base-padding);
   margin-top: $margin * -(3 / 2);
 }
 
 .portfolio_logo {
-  margin: $margin * 0;
+  margin: calc(var(--basemargin) * 0);
 }
 
 .portfolio_logo_link {
   font-family: 'DM Serif Display';
   font-size: $logo-font-size;
   line-height: $logo-line-height;
-  text-transform: $text-transform;
-  color: $logo-base-color;
+  text-transform: var(--text-transform);
+  color: var(--logo-color);
   ;
 }
 
 .portfolio_menu_navigation {
   width: 220px;
-  height: $default-width;
+  height: var(--width);
   @include absolute-position;
   top: 0;
   left: 0;
   box-shadow: 0px 0px 50px rgba(0,0,0,.25);
   z-index: 2;
-  background-color: $default-bg-color;
+  background-color: var(--default-bg-color);
   padding-inline-start: calc(var(--base-padding) * 2);
   padding-block-start: var(--base-padding);
   transform: translateX(-100%);
@@ -42,12 +42,12 @@
 }
 
 .portfolio_list_menu {
-  text-align: $text-align;
+  text-align: var(--text-align);
 }
 
 .portfolio_list_menu_item {
-  padding-top: $padding;
-  padding-bottom: $padding;
+  padding-top: var(--base-padding);
+  padding-bottom: var(--base-padding);
 }
 
 input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
@@ -55,7 +55,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 }
 
 .portfolio_list_menu_link {
-  color: $base-color;
+  color: var(--base-color);
 }
 
 [type="checkbox"]:checked ~ main {
@@ -63,12 +63,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 }
 
 .menu_checkbox {
-  visibility: $visibility;
+  visibility: var(--visibility);
 }
 
 .label_menu {
   color: transparent;
-  position: $parent-position;
+  position: var(--parent-position);
 }
 
 .label_menu::before {
@@ -99,7 +99,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     order: 2;
     width: 50%;
     height: 0;
-    padding: $padding * 0;
+    padding: calc(var(--padding) * 0);
   }
 
   .portfolio_list_menu {
@@ -108,12 +108,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   }
 
   .label_menu {
-    visibility: hidden;
+    visibility: var(--visibility);
   }
 
   .portfolio_list_menu_link {
     font-weight: 700;
     line-height: 24px;
-    color: $logo-base-color;
+    color: var(--logo-color);
   }
 }

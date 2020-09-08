@@ -3,9 +3,18 @@
 :root {
   --reset-anchor: $anchor-text-decoration;
   --base-padding: #{$padding};
-  --base-margin: #{$padding};
+  --base-margin: #{$margin};
   --logo-color: #{$logo-base-color};
   --base-visibility: $visibility;
   --basic-border: #{$border};
   --parent-position: #{$parent-position};
+  --header-bg: #{$header-bg-color};
+  --text-transform: #{$text-transform};
+  --base-color: #{$base-color};
+  --border-radius: #{$border};
+  --basic-text-align: #{$text-align};
+  --default-bg-color: #{$default-bg-color};
+  --width: #{$default-width};
+  --height: #{$default-height};
+  --visibility: #{$visibility};
 }
