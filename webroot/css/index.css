@@ -490,7 +490,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-color: #FFDD78; }
 
 .portfolio_newslatter__container {
-  padding: 1rem;
+  padding: var(--base-padding);
   padding-top: 63px;
   padding-bottom: 54px; }
 
@@ -508,11 +508,11 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 .portfolio_newsletter__hint {
   line-height: 24px;
   letter-spacing: 0.3em;
-  text-transform: uppercase; }
+  text-transform: var(--text-transform); }
 
 .portfolio_newsletter__email {
   border: none;
-  padding: 0rem;
+  padding: calc(var(--base-padding) * 0);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -522,24 +522,24 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  text-transform: uppercase;
-  padding-bottom: 1rem; }
+  text-transform: var(--text-transform);
+  padding-bottom: var(--base-padding); }
 
 .portfolio_newsletter__input {
-  padding: 1rem;
+  padding: var(--base-padding);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   width: 90%; }
 
 .portfolio_newslater_subscribe {
   background-color: blue;
-  color: #ffffff;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  color: var(--default-bg-color);
+  padding: var(--base-padding);
+  padding-left: calc(var(--base-padding) * 2);
+  padding-right: calc(var(--base-padding) * 2);
   border: none;
   border-radius: 5px;
-  margin-top: 1rem; }
+  margin-top: var(--base-margin); }
 
 @media (min-width: 960px) {
   .portfolio_newslatter__container {
