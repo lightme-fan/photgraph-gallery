@@ -1,0 +1,79 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'custom_property';
+
+.portfolio_newslatter {
+  background-color: #FFDD78;
+}
+
+.portfolio_newslatter__container {
+  padding: $padding;
+  padding-top: 63px;
+  padding-bottom: 54px;
+}
+
+.portfolio_newslatter__header {
+  @include displayFlex;
+  flex-direction: column-reverse;
+}
+
+.portfolio_newsletter__heading {
+  font-family: 'DM Serif Display';
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.portfolio_newsletter__hint {
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: $text-transform;
+}
+
+.portfolio_newsletter__email {
+  border: none;
+  padding: $padding * 0;
+  @include displayFlex;
+  flex-direction: column;
+}
+
+.porfolio_newsletter__label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-bottom: $padding;
+} 
+
+.portfolio_newsletter__input {
+  padding: $padding;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.portfolio_newslater_subscribe {
+  background-color: blue;
+  color: $default-bg-color;
+  padding: $padding;
+  padding-left: $padding * 2;
+  padding-right: $padding * 2;
+  border: none;
+  border-radius: 5px;
+  margin-top: $margin;
+}
+
+@media (min-width: 960px) {
+  .portfolio_newslatter__container {
+    @include container;
+    @include displayFlex;
+  }
+
+  .portfolio_newsletter__email {
+    align-self: center;
+  }
+
+  .portfolio_newslater_subscribe {
+    height: 48px;
+    align-self: center;
+  }
+}
