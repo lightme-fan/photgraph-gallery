@@ -1,0 +1,22 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'custom_property';
+
+.portfolio_metada_heading {
+  visibility: $visibility;
+}
+
+.portfolio_metadata_list {
+  @include displayGrid;
+  row-gap: 40px;
+  column-gap: calc(40px * 2);
+}
+
+.portfolio_metadata__item {
+  opacity: 0.5;
+}
+
+.portfolio_metadata__item_text {
+  font-weight: 700;
+  line-height: 24px;
+}

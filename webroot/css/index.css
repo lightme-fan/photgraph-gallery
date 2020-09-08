@@ -222,3 +222,27 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   .portfolio_masthead__intro {
     font-size: 18px;
     line-height: 32px; } }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.portfolio_metada_heading {
+  visibility: hidden; }
+
+.portfolio_metadata_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  row-gap: 40px;
+  column-gap: calc(40px * 2); }
+
+.portfolio_metadata__item {
+  opacity: 0.5; }
+
+.portfolio_metadata__item_text {
+  font-weight: 700;
+  line-height: 24px; }

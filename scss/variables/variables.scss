@@ -12,6 +12,13 @@
   justify-content: $justifyContent;
 }
 
+// Default display grid
+@mixin displayGrid($display: grid, $grid-template-colums: 1fr 1fr, $gap: 20px) {
+  display: $display;
+  grid-template-columns: $grid-template-colums;
+  gap: $gap;
+}
+
 // Mixing for container
 @mixin container {
   max-width: 1440px;
