@@ -78,7 +78,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   height: 20px;
   @include absolute-position;
   top: calc(100% / 4);
-  @include background('../svg/menu.svg');
+  @include background('../web_icons/icon_menu.svg');
 }
 
 @media (min-width: 960px) {

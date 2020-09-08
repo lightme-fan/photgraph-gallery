@@ -135,7 +135,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   bottom: 0;
   right: 0;
   top: calc(100% / 4);
-  background-image: url("../svg/menu.svg");
+  background-image: url("../web_icons/icon_menu.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
