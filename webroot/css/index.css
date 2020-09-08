@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
   font-weight: 400;
@@ -200,14 +199,19 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   order: 1; }
 
 .portfolio_masthead_back::before {
-  content: '←';
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   bottom: 0;
   right: 0;
-  left: 0;
+  background-image: url("../web_icons/icon_arrow_left.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: unset;
+  left: -100%;
   top: 0; }
 
 @media (min-width: 960px) {

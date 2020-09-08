@@ -29,10 +29,12 @@
 }
 
 .portfolio_masthead_back::before {
-  content: '←';
+  content: '';
   display: block;
   @include absolute-position;
-  left: 0;
+  @include background('../web_icons/icon_arrow_left.svg');
+  background-size: unset;
+  left: -100%;
   top: 0;
 }
 
