@@ -24,17 +24,21 @@
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 body {
   font-family: 'DM sans';
@@ -63,10 +67,12 @@ a {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_heading {
   background-color: #434CCC; }
@@ -176,10 +182,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_masthead__container {
   display: flex;
@@ -235,10 +243,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_image_slider__container {
   max-width: 1114px;
@@ -252,7 +262,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  position: var(--parent-position);
   overflow: auto; }
 
 .portfolio_image_slider_list::-webkit-scrollbar {
@@ -260,18 +270,20 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 .image_slider_active {
   width: 100%;
-  border-radius: 5px; }
+  border-radius: var(--basic-border); }
 
 .portfolio_image {
   width: 137px;
-  border-radius: 5px; }
+  border-radius: var(--basic-border); }
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_meatadata__container {
   padding-bottom: 105px; }
@@ -305,10 +317,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_carvings {
   padding-top: 75px; }
@@ -339,10 +353,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .icon {
   color: transparent; }
@@ -373,10 +389,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .portfolio_newslatter {
   background-color: #FFDD78; }
@@ -449,10 +467,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
-  --base-visibility: $visibility; }
+  --base-padding: 1rem;
+  --base-margin: 1rem;
+  --logo-color: #ffffff;
+  --base-visibility: $visibility;
+  --basic-border: 5px;
+  --parent-position: relative; }
 
 .porfolio_footer__container {
   max-width: 1114px;

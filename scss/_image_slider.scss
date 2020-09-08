@@ -13,7 +13,7 @@
 
 .portfolio_image_slider_list {
   @include displayFlex;
-  position: $parent-position;
+  position: var(--parent-position);
   overflow: auto;
 }
 
@@ -22,12 +22,11 @@
 }
 
 .image_slider_active {
-  width: 100%;
-  border-radius: 5px;
+  width: $default-width;
+  border-radius: var(--basic-border);
 }
 
 .portfolio_image {
   width: 137px;
-  border-radius: 5px;
-  // transform: scale(2 2);
+  border-radius: var(--basic-border);
 }

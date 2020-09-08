@@ -2,8 +2,10 @@
 
 :root {
   --reset-anchor: $anchor-text-decoration;
-  --base-padding: $padding;
-  --base-margin: $padding;
-  --logo-color: $logo-base-color;
+  --base-padding: #{$padding};
+  --base-margin: #{$padding};
+  --logo-color: #{$logo-base-color};
   --base-visibility: $visibility;
+  --basic-border: #{$border};
+  --parent-position: #{$parent-position};
 }
