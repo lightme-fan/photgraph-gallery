@@ -1,0 +1,33 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'variables/mixin';
+@import 'custom_property';
+
+.portfolio_image_slider__container {
+  @include container;
+}
+
+.portfolio_image_slider_heading {
+  display: none;
+}
+
+.portfolio_image_slider_list {
+  @include displayFlex;
+  position: $parent-position;
+  overflow: auto;
+}
+
+.portfolio_image_slider_list::-webkit-scrollbar {
+  display: none;
+}
+
+.image_slider_active {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.portfolio_image {
+  width: 137px;
+  border-radius: 5px;
+  // transform: scale(2 2);
+}

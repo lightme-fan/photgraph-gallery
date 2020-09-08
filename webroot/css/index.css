@@ -142,7 +142,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 @media (min-width: 960px) {
   .portfolio_heading__container {
-    max-width: 1440px;
+    max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between; }
@@ -212,7 +212,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 @media (min-width: 960px) {
   .portfolio_masthead__container {
-    max-width: 1440px;
+    max-width: 1114px;
     margin-left: auto;
     margin-right: auto; }
   .portfolio_masthead__heading {
@@ -222,6 +222,39 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   .portfolio_masthead__intro {
     font-size: 18px;
     line-height: 32px; } }
+
+:root {
+  --reset-anchor: $anchor-text-decoration;
+  --base-padding: $padding;
+  --base-margin: $padding;
+  --logo-color: $logo-base-color;
+  --base-visibility: $visibility; }
+
+.portfolio_image_slider__container {
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.portfolio_image_slider_heading {
+  display: none; }
+
+.portfolio_image_slider_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  overflow: auto; }
+
+.portfolio_image_slider_list::-webkit-scrollbar {
+  display: none; }
+
+.image_slider_active {
+  width: 100%;
+  border-radius: 5px; }
+
+.portfolio_image {
+  width: 137px;
+  border-radius: 5px; }
 
 :root {
   --reset-anchor: $anchor-text-decoration;
@@ -252,7 +285,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 @media (min-width: 960px) {
   .portfolio_meatadata__container {
-    max-width: 1440px;
+    max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -389,7 +422,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 @media (min-width: 960px) {
   .portfolio_newslatter__container {
-    max-width: 1440px;
+    max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -409,7 +442,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --base-visibility: $visibility; }
 
 .porfolio_footer__container {
-  max-width: 1440px;
+  max-width: 1114px;
   margin-left: auto;
   margin-right: auto; }
 
