@@ -230,6 +230,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --logo-color: $logo-base-color;
   --base-visibility: $visibility; }
 
+.portfolio_meatadata__container {
+  padding-bottom: 105px; }
+
 .portfolio_metada_heading {
   display: none; }
 
