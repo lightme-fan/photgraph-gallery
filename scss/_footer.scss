@@ -12,7 +12,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.portfolio_logo_link {
+.porfolio_footer_logo {
   color: $base-color;
 }
 
@@ -64,11 +64,6 @@
 }
 
 @media (min-width: 960px) {
-  // .porfolio_footer__container {
-  //   @include displayFlex;
-  //   grid-template-columns: repeat(3, 1fr);
-  // }
-
   .porfolio_footer__description {
     @include displayFlex;
     align-items: center;

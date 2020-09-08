@@ -463,7 +463,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-.portfolio_logo_link {
+.porfolio_footer_logo {
   color: #000000; }
 
 .porfolio_footer__about_description {
