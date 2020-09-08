@@ -23,8 +23,8 @@
 }
 
 .portfolio_masthead_back {
-  position: $parent-position;
-  padding-left: $padding * 2;
+  position: var(--parent-position);
+  padding-left: calc(var(--base-padding) * 2);
   order: 1;
 }
 
