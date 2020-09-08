@@ -20,22 +20,22 @@
 
 .portfolio_carving_description {
   line-height: 24px;
-  opacity: 0.5;
+  opacity: var(--opacity);
 }
 
 .portfolio_carving__sharing {
-  padding-top: $padding * 2;
+  padding-top: calc(var(-base-padding) * 2);
 }
 
 @media (min-width: 960px) {
   .portfolio_carvings {
-    padding-top: 0;
+    padding-top: calc(var(-base-padding) * 0);
   }
 
   .portfolio_carving__heading {
     font-size: 52px;
     line-height: 64px;
-    margin-top: $margin * 0;
+    margin-top: calc(var(-base-margin) * 0);
   }
   
 }
