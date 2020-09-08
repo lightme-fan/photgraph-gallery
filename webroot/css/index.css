@@ -338,29 +338,32 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --logo-color: $logo-base-color;
   --base-visibility: $visibility; }
 
+.icon {
+  color: transparent; }
+
 .facebook {
-  color: transparent;
   background-image: url("../web_icons/icon_facebook.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: auto; }
+  background-size: auto;
+  background-position: 0; }
 
 .twitter {
-  color: transparent;
   background-image: url("../web_icons/icon_twitter.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: auto; }
+  background-size: auto;
+  background-position: 0; }
 
 .instegram {
-  color: transparent;
   background-image: url("../web_icons/icon_instagram.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: auto; }
+  background-size: auto;
+  background-position: 0; }
 
 :root {
   --reset-anchor: $anchor-text-decoration;
