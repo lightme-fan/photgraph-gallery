@@ -55,6 +55,12 @@ ul {
 a {
   text-decoration: var(--reset-anchor); }
 
+.porfolio__media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: start; }
+
 :root {
   --reset-anchor: $anchor-text-decoration;
   --base-padding: $padding;

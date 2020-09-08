@@ -26,3 +26,7 @@ a {
   text-decoration: var(--reset-anchor);
 }
 
+.porfolio__media {
+  @include displayFlex;
+  justify-content: start;
+}
