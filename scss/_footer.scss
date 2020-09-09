@@ -30,6 +30,9 @@
   padding-bottom: calc(var(--base-padding) * 3);
 }
 
+.portfolio_menu_footer__summary {
+  display: none;
+}
 .portfolio_list_home_item {
   padding-bottom: var(--base-padding);
   opacity: var(--opacity);  

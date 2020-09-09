@@ -39,6 +39,15 @@
   transition: transform .2s;
 }
 
+summary {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .portfolio_list_menu {
   text-align: var(--text-align);
 }
@@ -98,6 +107,10 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     width: 50%;
     height: 0;
     padding: calc(var(--padding) * 0);
+  }
+
+  summary {
+    display: none;
   }
 
   .portfolio_list_menu {

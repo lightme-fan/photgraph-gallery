@@ -21,7 +21,8 @@
         <span class="portfolio_open_menu">Open menu</span>
       </label>
 
-      <nav class="portfolio_menu_navigation">
+      <details class="portfolio_menu_navigation" open>
+        <summary class="portfolio_menu_summary">Menu</summary>
         <ul class="portfolio_list_menu">
           <li class="portfolio_list_menu_item">
             <a href="/portgolio/about" class="portfolio_list_menu_link">About</a>
@@ -36,7 +37,7 @@
             <a href="/portfolio/contact" class="portfolio_list_menu_link">Contact</a>
           </li>
         </ul>
-      </nav>
+      </details>
     </div>
   </header>
 
@@ -156,6 +157,8 @@
           <p class="porfolio_footer__about_description">
             The personal website of Jesse McJessesen, professional photographer.
           </p>
+
+
           <ul class="porfolio__media porfolio_footer__about_media">
             <li class="porfolio_footer__about_media_list">
               <a href="portfolio/facebook" class="porfolio_footer__about_media_link icon facebook">Facebook</a>
@@ -171,20 +174,24 @@
 
         <div class="porfolio_footer__home">
           <h3 class="porfolio_footer__home_heading">Home</h3>
-          <ul class="portfolio_list_home">
-            <li class="portfolio_list_home_item">
-              <a href="/portgolio/about" class="portfolio_list_menu_link portfolio_list_home">About</a>
-            </li>
-            <li class="portfolio_list_home_item">
-              <a href="/portfolio/" class="portfolio_list_menu_link portfolio_list_home">Potfolio</a>
-            </li>
-            <li class="portfolio_list_home_item">
-              <a href="/porfolio/blog" class="portfolio_list_menu_link portfolio_list_home">Blog</a>
-            </li>
-            <li class="portfolio_list_home_item">
-              <a href="/portfolio/contact" class="portfolio_list_menu_link portfolio_list_home">Contact</a>
-            </li>
-          </ul>
+
+          <details class="portfolio_menu_footer" open>
+            <summary class="portfolio_menu_footer__summary">Menu</summary>
+            <ul class="portfolio_list_home">
+              <li class="portfolio_list_home_item">
+                <a href="/portgolio/about" class="portfolio_list_menu_link portfolio_list_home">About</a>
+              </li>
+              <li class="portfolio_list_home_item">
+                <a href="/portfolio/" class="portfolio_list_menu_link portfolio_list_home">Potfolio</a>
+              </li>
+              <li class="portfolio_list_home_item">
+                <a href="/porfolio/blog" class="portfolio_list_menu_link portfolio_list_home">Blog</a>
+              </li>
+              <li class="portfolio_list_home_item">
+                <a href="/portfolio/contact" class="portfolio_list_menu_link portfolio_list_home">Contact</a>
+              </li>
+            </ul>
+          </details>
         </div>
 
         <div class="porfolio_footer__blog">
