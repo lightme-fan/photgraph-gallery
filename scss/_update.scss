@@ -64,6 +64,10 @@
   border-radius: var(--border-radius);
   margin-top: var(--base-margin);
 }
+.portfolio_newsletter__input [type="email"] {
+  opacity: var(--opacity);
+}
+
 
 @media (min-width: 960px) {
   .portfolio_newslatter__container {
