@@ -11,10 +11,7 @@
 
 .portfolio_masthead__heading {
   @include headingFonts;
-  font-size: 52px;
-  line-height: 64px;
   order: 2;
-  margin-top: calc(var(--base-margin) * 0);
 }
 
 .portfolio_masthead__intro {
@@ -50,6 +47,7 @@
   .portfolio_masthead__heading {
     font-size: 72px;
     line-height: 80px;
+    margin-top: calc(var(--base-margin) * 0);
     white-space: pre-line; 
   }
 
