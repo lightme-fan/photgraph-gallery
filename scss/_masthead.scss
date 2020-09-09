@@ -3,17 +3,18 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
-.portfolio_masthead__container {
+.portfolio_masthead__wrap {
   @include displayFlex;
   flex-direction: column;
   padding-top: 31px;
 }
 
 .portfolio_masthead__heading {
-  font-family: 'DM Serif Display';
+  @include headingFonts;
   font-size: 52px;
   line-height: 64px;
   order: 2;
+  margin-top: calc(var(--base-margin) * 0);
 }
 
 .portfolio_masthead__intro {
@@ -40,6 +41,10 @@
 @media (min-width: 960px) {
   .portfolio_masthead__container {
     @include container;
+  }
+
+  .portfolio_masthead__wrap {
+    padding-right: 50%;
   }
 
   .portfolio_masthead__heading {

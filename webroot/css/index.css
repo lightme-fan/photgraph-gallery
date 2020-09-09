@@ -232,7 +232,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --visibility: hidden;
   --opacity: 0.5; }
 
-.portfolio_masthead__container {
+.portfolio_masthead__wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -240,10 +240,13 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   padding-top: 31px; }
 
 .portfolio_masthead__heading {
-  font-family: 'DM Serif Display';
+  font-family: "DM Serif Display";
+  font-size: 40px;
+  line-height: 48px;
   font-size: 52px;
   line-height: 64px;
-  order: 2; }
+  order: 2;
+  margin-top: calc(var(--base-margin) * 0); }
 
 .portfolio_masthead__intro {
   font-size: 18px;
@@ -275,6 +278,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     max-width: 1114px;
     margin-left: auto;
     margin-right: auto; }
+  .portfolio_masthead__wrap {
+    padding-right: 50%; }
   .portfolio_masthead__heading {
     font-size: 72px;
     line-height: 80px;
