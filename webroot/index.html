@@ -1,253 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laaqiq - Portfolio details</title>
-  <link rel="stylesheet" href="./css/index.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laaqiq - Portfolio details</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
 
-<body>
-  <input type="checkbox" class="menu_checkbox" id="input_checkbox">
+  <body>
+    <!-- Input checkbox -->
+    <input type="checkbox" class="menu_checkbox" id="input_checkbox">
 
-  <header class="portfolio_heading">
-    <div class="portfolio_heading__container container">
-      <h1 class="portfolio_logo">
-        <a href="portfolio-logo" class="portfolio_logo_link">Photograf</a>
-      </h1>
+    <!-- Header site -->
+    <header class="portfolio_heading">
+      <div class="portfolio_heading__container container">
+        <h1 class="portfolio_logo">
+          <a href="portfolio-logo" class="portfolio_logo_link">Photograf</a>
+        </h1>
 
-      <label for="input_checkbox" class="label_menu">
-        <span class="portfolio_open_menu">Open menu</span>
-      </label>
+        <label for="input_checkbox" class="label_menu">
+          <span class="portfolio_open_menu">Open menu</span>
+        </label>
 
-      <details class="portfolio_menu_navigation" open>
-        <summary class="portfolio_menu_summary">Menu</summary>
-        <ul class="portfolio_list_menu">
-          <li class="portfolio_list_menu_item">
-            <a href="/portgolio/about" class="portfolio_list_menu_link">About</a>
-          </li>
-          <li class="portfolio_list_menu_item">
-            <a href="/portfolio/" class="portfolio_list_menu_link">Potfolio</a>
-          </li>
-          <li class="portfolio_list_menu_item">
-            <a href="/porfolio/blog" class="portfolio_list_menu_link">Blog</a>
-          </li>
-          <li class="portfolio_list_menu_item">
-            <a href="/portfolio/contact" class="portfolio_list_menu_link">Contact</a>
-          </li>
-        </ul>
-      </details>
-    </div>
-  </header>
-
-  <main class="portfolio_details">
-    <header class="portfolio_masthead">
-      <div class="portfolio_masthead__container container">
-        <div class="portfolio_masthead__wrap">
-          <h2 class="portfolio_masthead__heading">
-            Beauty is seen through a lens
-          </h2>
-          <p class="portfolio_masthead__intro">
-            Perspective matters.<br> All my photographs try to capture that perspective, however subtle.
-          </p>
-          <small class="portfolio_masthead_back">Back to portfolio</small>
-        </div>
+        <details class="portfolio_menu_navigation" open>
+          <summary class="portfolio_menu_summary">Menu</summary>
+          <ul class="portfolio_list_menu">
+            <li class="portfolio_list_menu_item">
+              <a href="/portgolio/about" class="portfolio_list_menu_link">About</a>
+            </li>
+            <li class="portfolio_list_menu_item">
+              <a href="/portfolio/" class="portfolio_list_menu_link">Potfolio</a>
+            </li>
+            <li class="portfolio_list_menu_item">
+              <a href="/porfolio/blog" class="portfolio_list_menu_link">Blog</a>
+            </li>
+            <li class="portfolio_list_menu_item">
+              <a href="/portfolio/contact" class="portfolio_list_menu_link">Contact</a>
+            </li>
+          </ul>
+        </details>
       </div>
     </header>
 
-    <article class="portfolio_image_slider">
-      <div class="portfolio_image_slider__container container">
-        <h3 class="portfolio_image_slider_heading">Image slider</h3>
-        <div class="portfolio_image_slider_active">
-          <picture>
-            <img src="./images/rock_carvings_md.jpg" alt="Medium rock carving" class="image_slider_active thumb1">
-          </picture>
+    <main class="portfolio_details">
+      <!-- Masthead -->
+      <article class="portfolio_masthead">
+        <div class="portfolio_masthead__container container">
+          <div class="portfolio_masthead__wrap">
+            <h2 class="portfolio_masthead__heading">
+              Beauty is seen through a lens
+            </h2>
+            <p class="portfolio_masthead__intro">
+              Perspective matters.<br> All my photographs try to capture that perspective, however subtle.
+            </p>
+            <small class="portfolio_masthead_back">Back to portfolio</small>
+          </div>
         </div>
-        <figure class="portfolio_image_slider_list">
-          <picture class="picture">
-            <img src="./images/rock_carvings_md.jpg" alt="Medium rock carving" class="portfolio_image thumb1">
-          </picture>
-          <picture class="picture">
-            <img src="./images/stairs_md.jpg" alt="Medium Stairs" class="portfolio_image thumb3">
-          </picture>
-          <picture class="picture">
-            <img src="./images/ripples_md.jpg" alt="Medium ripples" class="portfolio_image thumb4">
-          </picture>
-          <picture class="picture">
-            <img src="./images/dunes_md.jpg" alt="Medium dunes" class="portfolio_image thumb5">
-          </picture>
-          <picture class="picture">
-            <img src="./images/arches_md.jpg" alt="Medium arches" class="portfolio_image thumb6">
-          </picture>
-          <picture class="picture">
-            <img src="./images/car_md.jpg" alt="Medium car" class="portfolio_image thumb7">
-          </picture>
-          <picture class="picture">
-            <img src="./images/sunset_md.jpg" alt="Medium sunset" class="portfolio_image thumb8">
-          </picture>
-          <picture class="picture">
-            <img src="./images/canyon_md.jpg" alt="Medium canyon" class="portfolio_image thumb9">
-          </picture>
-        </figure>
-      </div>
-    </article>
+      </article>
 
-    <article class="portfolio_metadata">
-      <div class="portfolio_meatadata__container container">
-        <h3 class="portfolio_metada_heading">Photo metadata</h3>
-        <ul class="portfolio_metadata_list">
-          <li class="portfolio_metadata__list_item">
-            <div class="portfolio_metadata__item">Date</div>
-            <span class="portfolio_metadata__item_text">July 2019</span>
-          </li>
-          <li class="portfolio_metadata__list_item">
-            <div class="portfolio_metadata__item">Location</div>
-            <span class="portfolio_metadata__item_text">Morrocan Highlands</span>
-          </li>
-          <li class="portfolio_metadata__list_item">
-            <div class="portfolio_metadata__item">Camera</div>
-            <span class="portfolio_metadata__item_text">
-              Canon EOS 1D Mark IV
-            </span>
-          </li>
-          <li class="portfolio_metadata__list_item">
-            <div class="portfolio_metadata__item">Lens</div>
-            <span class="portfolio_metadata__item_text">70mm f2.8 @ 1/16”</span>
-          </li>
-        </ul>
+      <!-- Slider -->
+      <article class="portfolio_image_slider">
+        <div class="portfolio_image_slider__container container">
+          <h3 class="portfolio_image_slider_heading">Image slider</h3>
 
-        <div class="portfolio_carvings">
-          <h3 class="portfolio_carving__heading">Mineral carvings</h3>
-          <p class="portfolio_carving__summary">
-            Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock
-            formations, carved millions of years ago.
-          </p>
-          <p class="portfolio_carving_description">
-            To truly experience these beautiful formations, one has to visit them in person. I hope my photos have
-            managed to capture the sheer size – gravitas even – and spellbinding nature of these eroded walls.
-          </p>
+          <div class="portfolio_image_slider__all">
+            <figure class="portfolio_image_slider_list">
+              <picture class="portfolio_image_slider_active">
+                <img src="./images/rock_carvings_md.jpg" alt="Medium rock carving" class="image_slider_active thumb1">
+              </picture>
+              <picture class="picture">
+                <img src="./images/rock_carvings_md.jpg" alt="Medium rock carving" class="portfolio_image thumb1">
+              </picture>
+              <picture class="picture">
+                <img src="./images/stairs_md.jpg" alt="Medium Stairs" class="portfolio_image thumb3">
+              </picture>
+              <picture class="picture">
+                <img src="./images/ripples_md.jpg" alt="Medium ripples" class="portfolio_image thumb4">
+              </picture>
+              <picture class="picture">
+                <img src="./images/dunes_md.jpg" alt="Medium dunes" class="portfolio_image thumb5">
+              </picture>
+              <picture class="picture">
+                <img src="./images/arches_md.jpg" alt="Medium arches" class="portfolio_image thumb6">
+              </picture>
+              <picture class="picture">
+                <img src="./images/car_md.jpg" alt="Medium car" class="portfolio_image thumb7">
+              </picture>
+              <picture class="picture">
+                <img src="./images/sunset_md.jpg" alt="Medium sunset" class="portfolio_image thumb8">
+              </picture>
+              <picture class="picture">
+                <img src="./images/canyon_md.jpg" alt="Medium canyon" class="portfolio_image thumb9">
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </article>
 
-          <ul class="porfolio__media portfolio_carving__sharing">
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/facebook" class="porfolio_footer__about_media_link icon facebook">Facebook</a>
+      <!-- Phot metadata and Mineral carving -->
+      <article class="portfolio_metadata">
+        <div class="portfolio_meatadata__container container">
+
+          <!-- Photo metadata -->
+          <h3 class="portfolio_metada_heading">Photo metadata</h3>
+
+          <ul class="portfolio_metadata_list">
+            <li class="portfolio_metadata__list_item">
+              <div class="portfolio_metadata__item">Date</div>
+              <span class="portfolio_metadata__item_text">July 2019</span>
             </li>
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/twiter" class="porfolio_footer__about_media_link icon twitter">Twitter</a>
+
+            <li class="portfolio_metadata__list_item">
+              <div class="portfolio_metadata__item">Location</div>
+              <span class="portfolio_metadata__item_text">Morrocan Highlands</span>
             </li>
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/instegram" class="porfolio_footer__about_media_link icon instegram">Instegram</a>
+
+            <li class="portfolio_metadata__list_item">
+              <div class="portfolio_metadata__item">Camera</div>
+              <span class="portfolio_metadata__item_text">
+                Canon EOS 1D Mark IV
+              </span>
+            </li>
+
+            <li class="portfolio_metadata__list_item">
+              <div class="portfolio_metadata__item">Lens</div>
+              <span class="portfolio_metadata__item_text">70mm f2.8 @ 1/16”</span>
             </li>
           </ul>
-        </div>
-      </div>
-    </article>
 
-    <article class="portfolio_newslatter">
-      <div class="portfolio_newslatter__container container">
-        <header class="portfolio_newslatter__header">
-          <h3 class="portfolio_newsletter__heading">
-            Stay up-to-date with my updates
-          </h3>
-          <p class="portfolio_newsletter__hint">Latest</p>
-        </header>
-        <fieldset class="portfolio_newsletter__email">
-          <label for="newsletter" class="porfolio_newsletter__label">
-            Your email address
-          </label>
-          <input type="email" id="newsletter" class="portfolio_newsletter__input" value="jesse@gmail.com">
-        </fieldset>
-        <button type="button" class="portfolio_newslater_subscribe">
-          Subscribe
-        </button>
-      </div>
-    </article>
+          <!-- Mineral carving -->
+          <div class="portfolio_carvings">
+            <h3 class="portfolio_carving__heading">Mineral carvings</h3>
+            <p class="portfolio_carving__summary">
+              Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock
+              formations, carved millions of years ago.
+            </p>
+            <p class="portfolio_carving_description">
+              To truly experience these beautiful formations, one has to visit them in person. I hope my photos have
+              managed to capture the sheer size – gravitas even – and spellbinding nature of these eroded walls.
+            </p>
 
-  </main>
-
-  <footer class="porfolio_footer">
-    <div class="porfolio_footer__container container">
-      <div class="porfolio_footer__description">
-        <div class="porfolio_footer__about">
-          <h2 class="porfolio_footer__about_heading">
-            <a href="portfolio-logo" class="portfolio_logo_link porfolio_footer_logo">Photograf</a>
-          </h2>
-          <p class="porfolio_footer__about_description">
-            The personal website of Jesse McJessesen, professional photographer.
-          </p>
-
-
-          <ul class="porfolio__media porfolio_footer__about_media">
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/facebook" class="porfolio_footer__about_media_link icon facebook">Facebook</a>
-            </li>
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/twiter" class="porfolio_footer__about_media_link icon twitter">Twitter</a>
-            </li>
-            <li class="porfolio_footer__about_media_list">
-              <a href="portfolio/instegram" class="porfolio_footer__about_media_link icon instegram">Instegram</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="porfolio_footer__home">
-          <h3 class="porfolio_footer__home_heading">Home</h3>
-
-          <details class="portfolio_menu_footer" open>
-            <summary class="portfolio_menu_footer__summary">Menu</summary>
-            <ul class="portfolio_list_home">
-              <li class="portfolio_list_home_item">
-                <a href="/portgolio/about" class="portfolio_list_menu_link portfolio_list_home">About</a>
+            <ul class="porfolio__media portfolio_carving__sharing">
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/facebook" class="porfolio_footer__about_media_link icon facebook">Facebook</a>
               </li>
-              <li class="portfolio_list_home_item">
-                <a href="/portfolio/" class="portfolio_list_menu_link portfolio_list_home">Potfolio</a>
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/twiter" class="porfolio_footer__about_media_link icon twitter">Twitter</a>
               </li>
-              <li class="portfolio_list_home_item">
-                <a href="/porfolio/blog" class="portfolio_list_menu_link portfolio_list_home">Blog</a>
-              </li>
-              <li class="portfolio_list_home_item">
-                <a href="/portfolio/contact" class="portfolio_list_menu_link portfolio_list_home">Contact</a>
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/instegram" class="porfolio_footer__about_media_link icon instegram">Instegram</a>
               </li>
             </ul>
-          </details>
+          </div>
+        </div>
+      </article>
+
+      <!-- Newsletter -->
+      <article class="portfolio_newslatter">
+        <div class="portfolio_newslatter__container container">
+          <header class="portfolio_newslatter__header">
+            <h3 class="portfolio_newsletter__heading">
+              Stay up-to-date with my updates
+            </h3>
+            <p class="portfolio_newsletter__hint">Latest</p>
+          </header>
+
+          <fieldset class="portfolio_newsletter__email">
+            <label for="newsletter" class="porfolio_newsletter__label">
+              Your email address
+            </label>
+            <input type="email" id="newsletter" class="portfolio_newsletter__input" value="jesse@gmail.com">
+          </fieldset>
+
+          <button type="button" class="portfolio_newslater_subscribe">
+            Subscribe
+          </button>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="porfolio_footer">
+      <div class="porfolio_footer__container container">
+        <div class="porfolio_footer__description">
+          <div class="porfolio_footer__about">
+            <h2 class="porfolio_footer__about_heading">
+              <a href="portfolio-logo" class="portfolio_logo_link porfolio_footer_logo">Photograf</a>
+            </h2>
+            <p class="porfolio_footer__about_description">
+              The personal website of Jesse McJessesen, professional photographer.
+            </p>
+
+
+            <ul class="porfolio__media porfolio_footer__about_media">
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/facebook" class="porfolio_footer__about_media_link icon facebook">Facebook</a>
+              </li>
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/twiter" class="porfolio_footer__about_media_link icon twitter">Twitter</a>
+              </li>
+              <li class="porfolio_footer__about_media_list">
+                <a href="portfolio/instegram" class="porfolio_footer__about_media_link icon instegram">Instegram</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Menu -->
+          <div class="porfolio_footer__home">
+            <h3 class="porfolio_footer__home_heading">Home</h3>
+
+            <details class="portfolio_menu_footer" open>
+              <summary class="portfolio_menu_footer__summary">Menu</summary>
+              <ul class="portfolio_list_home">
+                <li class="portfolio_list_home_item">
+                  <a href="/portgolio/about" class="portfolio_list_menu_link portfolio_list_home">About</a>
+                </li>
+                <li class="portfolio_list_home_item">
+                  <a href="/portfolio/" class="portfolio_list_menu_link portfolio_list_home">Potfolio</a>
+                </li>
+                <li class="portfolio_list_home_item">
+                  <a href="/porfolio/blog" class="portfolio_list_menu_link portfolio_list_home">Blog</a>
+                </li>
+                <li class="portfolio_list_home_item">
+                  <a href="/portfolio/contact" class="portfolio_list_menu_link portfolio_list_home">Contact</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+          <div class="porfolio_footer__blog">
+            <ul class="porfolio_footer__blog_entry">
+              <li class="porfolio_footer__blog_entry__item">
+                <img src="./images/woman_xs.jpg" alt="Woman xs" class="porfolio_footer__blog_author">
+                <div class="porfolio_footer__blog_text">
+                  <p class="porfolio_footer__blog_desc">Rust, pumpkin, tans, and spices.</p>
+                  <span class="porfolio_footer__blog_updated">
+                    July 15, 2019
+                  </span>
+                </div>
+              </li>
+              <li class="porfolio_footer__blog_entry__item">
+                <img src="./images/passage_xs.jpg" alt="passage xs" class="porfolio_footer__blog_author">
+                <div class="porfolio_footer__blog_text">
+                  <p class="porfolio_footer__blog_desc">Experiencing Japan</p>
+                  <span class="porfolio_footer__blog_updated">
+                    July 10, 2019
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="porfolio_footer__blog">
-          <ul class="porfolio_footer__blog_entry">
-            <li class="porfolio_footer__blog_entry__item">
-              <img src="./images/woman_xs.jpg" alt="Woman xs" class="porfolio_footer__blog_author">
-              <div class="porfolio_footer__blog_text">
-                <p class="porfolio_footer__blog_desc">Rust, pumpkin, tans, and spices.</p>
-                <span class="porfolio_footer__blog_updated">
-                  July 15, 2019
-                </span>
-              </div>
-            </li>
-            <li class="porfolio_footer__blog_entry__item">
-              <img src="./images/passage_xs.jpg" alt="passage xs" class="porfolio_footer__blog_author">
-              <div class="porfolio_footer__blog_text">
-                <p class="porfolio_footer__blog_desc">Experiencing Japan</p>
-                <span class="porfolio_footer__blog_updated">
-                  July 10, 2019
-                </span>
-              </div>
-            </li>
-          </ul>
+        <div class="porfolio_builders">
+          <p class="porfolio_modified">
+            Created by Laaqiq, modified by Onja
+          </p>
+          <p class="porfolio_copyright">
+            © PHOTOGRAF, 2020. All rights reserved.
+          </p>
         </div>
       </div>
+    </footer>
 
-      <div class="porfolio_builders">
-        <p class="porfolio_modified">
-          Created by Laaqiq, modified by Onja
-        </p>
-        <p class="porfolio_copyright">
-          © PHOTOGRAF, 2020. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 
 </html>

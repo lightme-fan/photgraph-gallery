@@ -13,10 +13,15 @@
   display: none;
 }
 
+// A div which wrap the figure
+.portfolio_image_slider__all {
+  padding-top: 100% * ($large-height / $large-width);
+  position: var(--parent-position);
+}
+
 // A div which wrap the images
 .portfolio_image_slider_list {
   @include displayFlex;
-  position: var(--parent-position);
   overflow: auto;
   margin: calc(var(--base-margin) * 0);
 }
@@ -26,23 +31,29 @@
   display: none;
 }
 
+// A space between the images
+.picture {
+  padding-right: var(--image-left-space);
+}
+
 // This is for the active image
 .image_slider_active {
   width: $default-width;
   border-radius: var(--basic-border);
-}
-
-// A space between the images
-.picture {
-  margin-right: var(--image-left-space);
-}
-
-.picture:last-of-type {
-  margin-right: calc(var(--image-left-space) * 0);
+  @include absolute-position;
+  top: 100% * -1 / ($small-height / 1px);
 }
 
 // width of the images
 .portfolio_image {
-  width: 137px;
   border-radius: var(--basic-border);
+  width: var(--image-width);
+}
+
+// Desktop
+@media (min-width: 960px) {
+  // A space between the images
+  .picture {
+    margin-right: calc(var(--image-left-space) * 0);
+  }
 }
