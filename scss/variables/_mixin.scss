@@ -1,8 +1,8 @@
 // List
-@mixin reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@mixin reset-list($padding: 0, $margin: 0, $style: none) {
+  margin: $margin;
+  padding: $padding;
+  list-style: $padding;
 }
 
 // Display flex
@@ -20,10 +20,10 @@
 }
 
 // Mixing for container
-@mixin container {
-  max-width: 1114px;
-  margin-left: auto;
-  margin-right: auto;
+@mixin container($width: 1114px, $left-space: auto, $right-space: auto) {
+  max-width: $width;
+  margin-left: $left-space;
+  margin-right: $right-space;
 }
 
 // backgroung mixing
@@ -37,10 +37,10 @@
 }
 
 // Position absolute
-@mixin absolute-position {
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  bottom: 0;
-  right: 0;
+@mixin absolute-position($position: absolute, $top: 0, $left: 0, $bottom: 0, $right: 0) {
+  position: $position;
+  top: $top; 
+  left: $left;
+  bottom: $bottom;
+  right: $right;
 }
