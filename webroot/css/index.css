@@ -405,7 +405,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   padding-top: 75px; }
 
 .portfolio_carving__heading {
-  font-family: 'DM Serif Display';
+  font-family: "DM Serif Display";
   font-size: 40px;
   line-height: 48px; }
 
@@ -414,6 +414,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   line-height: 32px; }
 
 .portfolio_carving_description {
+  font-size: 16px;
   line-height: 24px;
   opacity: var(--opacity); }
 
