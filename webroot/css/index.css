@@ -605,6 +605,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   color: var(--base-color); }
 
 .porfolio_footer__about_description {
+  font-size: 16px;
   line-height: 24px;
   opacity: var(--opacity); }
 
@@ -646,16 +647,18 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 @media (min-width: 960px) {
   .porfolio_footer__description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center; }
   .porfolio_builders {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   .porfolio_footer__home {
-    padding-bottom: calc(var(--base-padding) * 0); }
+    padding-bottom: calc(var(--base-padding) * 0);
+    justify-self: center; }
   .portfolio_list_home {
     color: var(--base-color);
     opacity: var(--opacity); } }

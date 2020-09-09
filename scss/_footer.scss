@@ -17,7 +17,7 @@
 }
 
 .porfolio_footer__about_description {
-  line-height: 24px;
+  @include detailFonts;
   opacity: var(--opacity);
 }
 
@@ -65,7 +65,8 @@
 
 @media (min-width: 960px) {
   .porfolio_footer__description {
-    @include displayFlex;
+    @include displayGrid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
   }
 
@@ -75,6 +76,7 @@
 
   .porfolio_footer__home {
     padding-bottom: calc(var(--base-padding) * 0);
+    justify-self: center;
   }
 
   .portfolio_list_home {
