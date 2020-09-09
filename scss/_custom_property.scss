@@ -1,7 +1,7 @@
 @import 'variables/variables';
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: #{$anchor-text-decoration};
   --base-padding: #{$padding};
   --base-margin: #{$margin};
   --logo-color: #{$logo-base-color};
@@ -20,4 +20,5 @@
   --opacity: #{$opacity};
   --image-left-space: #{$image-left-space};
   --image-width: #{$image-width};
+
 }

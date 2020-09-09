@@ -23,7 +23,7 @@
   src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Italic.woff") format("woff"); }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -44,7 +44,7 @@
   --image-width: 137px; }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -90,7 +90,7 @@ a {
   justify-content: start; }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -220,7 +220,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     color: var(--logo-color); } }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -295,7 +295,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     line-height: 32px; } }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -347,7 +347,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   margin-right: calc(var(--image-left-space) * 0); }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -400,7 +400,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     padding-block-start: 88px; } }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -446,7 +446,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     margin-top: calc(var(--base-margin) * 0); } }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -494,7 +494,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-position: 0; }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
@@ -595,7 +595,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     margin-top: calc(var(--base-margin) * 2); } }
 
 :root {
-  --reset-anchor: $anchor-text-decoration;
+  --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
   --logo-color: #ffffff;
