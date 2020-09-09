@@ -640,7 +640,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   padding-bottom: calc(var(--base-padding) * 3); }
 
 .portfolio_list_home_item {
-  padding-bottom: var(--base-padding); }
+  padding-bottom: var(--base-padding);
+  opacity: var(--opacity); }
 
 .porfolio_footer__blog_entry__item {
   display: flex;
