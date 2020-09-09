@@ -3,17 +3,17 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
-.portfolio_newslatter {
+.portfolio_newsletter {
   background-color: #FFDD78;
 }
 
-.portfolio_newslatter__container {
+.portfolio_newsletter__container {
   padding: var(--base-padding);
   padding-top: 63px;
   padding-bottom: 54px;
 }
 
-.portfolio_newslatter__header {
+.portfolio_newsletter__header {
   @include displayFlex;
   flex-direction: column-reverse;
 }
@@ -54,7 +54,7 @@
   opacity: var(--opacity);
 }
 
-.portfolio_newslater_subscribe {
+.portfolio_newsletter_subscribe {
   background-color: var(--header-bg);
   color: var(--default-bg-color);
   padding: var(--base-padding);
@@ -70,7 +70,7 @@
 
 
 @media (min-width: 960px) {
-  .portfolio_newslatter__container {
+  .portfolio_newsletter__container {
     @include container;
     @include displayGrid;
     grid-template-columns: 2fr 2fr 1fr;
@@ -87,7 +87,7 @@
     padding-left: calc(100% * 76 / 346);
   }
 
-  .portfolio_newslater_subscribe {
+  .portfolio_newsletter_subscribe {
     height: 48px;
     align-self: center;
     margin-top: calc(var(--base-margin) * 2);

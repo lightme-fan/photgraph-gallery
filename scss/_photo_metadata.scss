@@ -3,11 +3,11 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
-.portfolio_meatadata__container {
+.portfolio_metadata__container {
   padding-bottom: 105px;
 } 
 
-.portfolio_metada_heading {
+.portfolio_metadata_heading {
   display: none;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media (min-width: 960px) {
-  .portfolio_meatadata__container {
+  .portfolio_metadata__container {
     @include container;
     @include displayGrid;
     gap: 157px;
