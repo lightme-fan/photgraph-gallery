@@ -2,7 +2,7 @@
 @mixin reset-list($padding: 0, $margin: 0, $style: none) {
   margin: $margin;
   padding: $padding;
-  list-style: $padding;
+  list-style: $style;
 }
 
 // Display flex

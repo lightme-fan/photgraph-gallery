@@ -74,7 +74,7 @@ footer {
 ul {
   margin: 0;
   padding: 0;
-  list-style: 0; }
+  list-style: none; }
 
 a {
   text-decoration: var(--reset-anchor); }
@@ -264,8 +264,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: unset;
-  left: -100%;
-  top: 0; }
+  left: -100%; }
 
 @media (min-width: 960px) {
   .portfolio_masthead__container {
