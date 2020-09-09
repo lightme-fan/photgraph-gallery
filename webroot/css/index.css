@@ -578,31 +578,31 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   margin-right: auto; }
 
 .porfolio_footer__description {
-  padding-bottom: 3rem;
+  padding-bottom: calc(var(--base-padding) * 3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .porfolio_footer_logo {
-  color: #000000; }
+  color: var(--base-color); }
 
 .porfolio_footer__about_description {
   line-height: 24px;
-  opacity: 0.5; }
+  opacity: var(--opacity); }
 
 .porfolio_footer__about_media {
-  padding-top: 1rem; }
+  padding-top: var(--base-padding); }
 
 .porfolio_footer__home {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-top: calc(var(--base-padding) * 3);
+  padding-bottom: calc(var(--base-padding) * 3); }
 
 .portfolio_list_home_item {
-  padding-bottom: 1rem; }
+  padding-bottom: var(--base-padding); }
 
 .porfolio_footer__blog_entry__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: var(--base-margin);
   justify-content: unset; }
 
 .porfolio_footer__blog_author {
@@ -610,11 +610,11 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   height: 48px;
   align-self: center;
   border-radius: 5px;
-  margin-right: 2rem; }
+  margin-right: calc(var(--base-margin) * 2); }
 
 .porfolio_footer__blog_desc {
-  margin: 0rem;
-  opacity: 0.5; }
+  margin: calc(var(--base-margin) * 0);
+  opacity: var(--opacity); }
 
 .porfolio_footer__blog_updated {
   font-weight: 700;
@@ -622,7 +622,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   line-height: 24px; }
 
 .porfolio_builders {
-  opacity: 0.5; }
+  opacity: var(--opacity); }
 
 @media (min-width: 960px) {
   .porfolio_footer__description {
@@ -635,7 +635,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     flex-direction: row;
     justify-content: space-between; }
   .porfolio_footer__home {
-    padding-bottom: 0rem; }
+    padding-bottom: calc(var(--base-padding) * 0); }
   .portfolio_list_home {
-    color: #000000;
-    opacity: 0.5; } }
+    color: var(--base-color);
+    opacity: var(--opacity); } }

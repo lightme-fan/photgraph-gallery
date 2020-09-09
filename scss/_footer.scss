@@ -8,35 +8,35 @@
 }
 
 .porfolio_footer__description {
-  padding-bottom: $padding * 3;
+  padding-bottom: calc(var(--base-padding) * 3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .porfolio_footer_logo {
-  color: $base-color;
+  color: var(--base-color);
 }
 
 .porfolio_footer__about_description {
   line-height: 24px;
-  opacity: 0.5;
+  opacity: var(--opacity);
 }
 
 .porfolio_footer__about_media {
-  padding-top: $padding;
+  padding-top: var(--base-padding);
 }
 
 .porfolio_footer__home {
-  padding-top: $padding * 3;
-  padding-bottom: $padding * 3;
+  padding-top: calc(var(--base-padding) * 3);
+  padding-bottom: calc(var(--base-padding) * 3);
 }
 
 .portfolio_list_home_item {
-  padding-bottom: $padding;  
+  padding-bottom: var(--base-padding);  
 }
 
 .porfolio_footer__blog_entry__item {
   @include displayFlex;
-  margin-bottom: $margin;
+  margin-bottom: var(--base-margin);
   justify-content: unset;
 }
 
@@ -45,12 +45,12 @@
   height: 48px;
   align-self: center;
   border-radius: 5px;
-  margin-right: $margin * 2;
+  margin-right: calc(var(--base-margin) * 2);
 }
 
 .porfolio_footer__blog_desc {
-  margin: $margin * 0;
-  opacity: 0.5;
+  margin: calc(var(--base-margin) * 0);
+  opacity: var(--opacity);
 }
 
 .porfolio_footer__blog_updated {
@@ -60,7 +60,7 @@
 }
 
 .porfolio_builders {
-  opacity: 0.5;
+  opacity: var(--opacity);
 }
 
 @media (min-width: 960px) {
@@ -74,11 +74,11 @@
   }
 
   .porfolio_footer__home {
-    padding-bottom: $padding * 0;
+    padding-bottom: calc(var(--base-padding) * 0);
   }
 
   .portfolio_list_home {
-    color: $base-color;
-    opacity: 0.5;
+    color: var(--base-color);
+    opacity: var(--opacity);
   }
 }
