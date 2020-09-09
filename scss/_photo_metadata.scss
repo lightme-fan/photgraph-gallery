@@ -13,8 +13,8 @@
 
 .portfolio_metadata_list {
   @include displayGrid;
-  row-gap: 40px;
-  column-gap: calc(40px * 2);
+  height: calc(100% / 2);
+  padding-top: var(--base-padding);
 }
 
 .portfolio_metadata__item {
@@ -23,7 +23,7 @@
 
 .portfolio_metadata__item_text {
   font-weight: 700;
-  line-height: 24px;
+  @include detailFonts;
 }
 
 @media (min-width: 960px) {
@@ -31,5 +31,6 @@
     @include container;
     @include displayGrid;
     gap: 157px;
+    padding-block-start: 88px;
   }
 }
