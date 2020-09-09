@@ -59,7 +59,7 @@
   padding-left: calc(var(--base-padding) * 2);
   padding-right: calc(var(--base-padding) * 2);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   margin-top: var(--base-margin);
 }
 
