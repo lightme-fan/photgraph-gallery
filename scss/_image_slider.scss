@@ -3,14 +3,17 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// Div container
 .portfolio_image_slider__container {
   @include container;
 }
 
+// Heading (h3)
 .portfolio_image_slider_heading {
   display: none;
 }
 
+// A div which wrap the images
 .portfolio_image_slider_list {
   @include displayFlex;
   position: var(--parent-position);
@@ -18,21 +21,28 @@
   margin: calc(var(--base-margin) * 0);
 }
 
+// Removing the scroll bar at the bottom of the image list
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none;
 }
 
+// This is for the active image
 .image_slider_active {
   width: $default-width;
   border-radius: var(--basic-border);
 }
 
-.portfolio_image {
-  width: 137px;
-  border-radius: var(--basic-border);
+// A space between the images
+.picture {
   margin-right: var(--image-left-space);
 }
 
-.portfolio_image:last-of-type {
+.picture:last-of-type {
   margin-right: calc(var(--image-left-space) * 0);
+}
+
+// width of the images
+.portfolio_image {
+  width: 137px;
+  border-radius: var(--basic-border);
 }

@@ -347,13 +347,15 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   width: 100%;
   border-radius: var(--basic-border); }
 
-.portfolio_image {
-  width: 137px;
-  border-radius: var(--basic-border);
+.picture {
   margin-right: var(--image-left-space); }
 
-.portfolio_image:last-of-type {
+.picture:last-of-type {
   margin-right: calc(var(--image-left-space) * 0); }
+
+.portfolio_image {
+  width: 137px;
+  border-radius: var(--basic-border); }
 
 :root {
   --reset-anchor: none;
