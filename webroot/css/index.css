@@ -118,7 +118,9 @@ a {
   margin: calc(var(--base-margin) * 0); }
 
 .portfolio_logo_link {
-  font-family: 'DM Serif Display';
+  font-family: "DM Serif Display";
+  font-size: 40px;
+  line-height: 48px;
   font-size: 24px;
   line-height: 24px;
   text-transform: var(--text-transform);
@@ -187,6 +189,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     margin-right: auto;
     justify-content: space-between; }
   .portfolio_logo_link {
+    font-family: "DM Serif Display";
     font-size: 40px;
     line-height: 48px; }
   .portfolio_menu_navigation {
@@ -206,6 +209,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     visibility: var(--visibility); }
   .portfolio_list_menu_link {
     font-weight: 700;
+    font-size: 16px;
     line-height: 24px;
     color: var(--logo-color); } }
 

@@ -18,7 +18,7 @@
 }
 
 .portfolio_logo_link {
-  font-family: 'DM Serif Display';
+  @include headingFonts;
   font-size: $logo-font-size;
   line-height: $logo-line-height;
   text-transform: var(--text-transform);
@@ -87,8 +87,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   }
 
   .portfolio_logo_link {
-    font-size: 40px;
-    line-height: 48px;
+    @include headingFonts;
   }
 
   .portfolio_menu_navigation {  
@@ -112,7 +111,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
   .portfolio_list_menu_link {
     font-weight: 700;
-    line-height: 24px;
+    @include detailFonts;
     color: var(--logo-color);
   }
 }

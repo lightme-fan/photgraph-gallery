@@ -44,3 +44,14 @@
   bottom: $bottom;
   right: $right;
 }
+
+@mixin  headingFonts($family: 'DM Serif Display', $size: 40px, $line-height: 48px) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin  detailFonts($size: 16px, $line-height: 24px) {
+  font-size: $size;
+  line-height: $line-height;
+}
