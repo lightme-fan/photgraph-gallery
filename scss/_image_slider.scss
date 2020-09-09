@@ -15,6 +15,7 @@
   @include displayFlex;
   position: var(--parent-position);
   overflow: auto;
+  margin: calc(var(--base-margin) * 0);
 }
 
 .portfolio_image_slider_list::-webkit-scrollbar {
@@ -29,4 +30,9 @@
 .portfolio_image {
   width: 137px;
   border-radius: var(--basic-border);
+  margin-right: var(--image-left-space);
+}
+
+.portfolio_image:last-of-type {
+  margin-right: calc(var(--image-left-space) * 0);
 }
