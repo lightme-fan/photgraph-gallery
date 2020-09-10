@@ -54,6 +54,6 @@
 @media (min-width: 960px) {
   // A space between the images
   .picture {
-    margin-right: calc(var(--image-left-space) * 0);
+    padding-right: calc(var(--image-left-space) * 0);
   }
 }

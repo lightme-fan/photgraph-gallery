@@ -35,7 +35,7 @@
   flex-direction: column;
 }
 
-.porfolio_newsletter__label {
+.portfolio_newsletter__label {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
@@ -90,6 +90,5 @@
   .portfolio_newsletter_subscribe {
     height: 48px;
     align-self: center;
-    margin-top: calc(var(--base-margin) * 2);
   }
 }

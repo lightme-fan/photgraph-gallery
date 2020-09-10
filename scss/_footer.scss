@@ -3,88 +3,140 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// Position relative on the footer
+.portfolio_footer {
+  position: var(--parent-position);
+}
+
+// This is the border after the blog entry, I use pseudo after to set it.
+.portfolio_footer::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  @include absolute-position;
+  top: calc(100% - 375px / 3);
+  box-sizing: border-box;
+}
+
+// A div which wraps everything inside of the container
 .portfolio_footer__container {
   @include container;
 }
 
+// This is a div which wraps the footer about, footer nav and the blog entry
 .portfolio_footer__description {
   padding-bottom: calc(var(--base-padding) * 3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+// Change the logo colour into black
 .portfolio_footer_logo {
   color: var(--base-color);
 }
 
+// Footer about
 .portfolio_footer__about_description {
   @include detailFonts;
   opacity: var(--opacity);
 }
 
+// Social media in the footer
 .portfolio__about_media {
   padding-top: var(--base-padding);
 }
 
+// Footer nav (Menu). This is details element
 .portfolio_footer__home {
   padding-top: calc(var(--base-padding) * 3);
   padding-bottom: calc(var(--base-padding) * 3);
 }
 
+// Summary inside of the details
 .portfolio_menu_footer__summary {
   display: none;
 }
+
+// This is the list of the menu inside of footer
 .portfolio_list_home_item {
   padding-bottom: var(--base-padding);
   opacity: var(--opacity);  
 }
 
+// Blog entries
 .portfolio_footer__blog_entry__item {
   @include displayFlex;
   margin-bottom: var(--base-margin);
-  justify-content: unset;
+  width: var(--width);
 }
 
+
+// The profile of the author inside of the blog entry 
 .portfolio_footer__blog_author {
   width: 70px;
   height: 48px;
   align-self: center;
-  border-radius: 5px;
-  margin-right: calc(var(--base-margin) * 2);
+  border-radius: var(--border-radius);
 }
 
+// Blog
 .portfolio_footer__blog_desc {
   margin: calc(var(--base-margin) * 0);
   opacity: var(--opacity);
 }
 
+// Date of the blog
 .portfolio_footer__blog_updated {
   font-weight: 700;
   font-size: 12px;
-  line-height: 24px;
+  @include detailFonts;
 }
 
+// The last blog entry
+.portfolio_footer__blog_entry__item:last-of-type {
+  justify-content: start;
+}
+
+// Image insde of the second blog entry
+.portfolio_footer__blog_author:last-of-type {
+  margin-right: calc(var(--base-margin) * 4);
+}
+
+
+// Author of this page and the copyright
 .portfolio_builders {
   opacity: var(--opacity);
 }
 
+// Desktop
 @media (min-width: 960px) {
+
+  // Border inside of the footer in desktop
+  .portfolio_footer::after {
+    top: calc(100% - 375px / 5);
+  }
+  
+  // 
   .portfolio_footer__description {
     @include displayGrid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
   }
 
-  .portfolio_builders {
-    @include displayFlex;
-  }
-
+  // Footer nav
   .portfolio_footer__home {
     padding-bottom: calc(var(--base-padding) * 0);
     justify-self: center;
   }
 
+  // Footer nav item
   .portfolio_list_home {
     color: var(--base-color);
     opacity: var(--opacity);
+  }
+
+  // Copyright
+  .portfolio_builders {
+    @include displayFlex;
   }
 }
