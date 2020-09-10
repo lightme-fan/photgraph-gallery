@@ -3,20 +3,24 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// Heading
 .portfolio_heading {
   background-color: var(--header-bg);
 }
 
+// Header container
 .portfolio_heading__container {
   @include displayFlex;
   padding: var(--base-padding);
   margin-top: $margin * -(3 / 2);
 }
 
+// Logo
 .portfolio_logo {
   margin: calc(var(--base-margin) * 0);
 }
 
+// logo liknk
 .portfolio_logo_link {
   @include headingFonts;
   font-size: $logo-font-size;
@@ -26,6 +30,7 @@
   ;
 }
 
+// Menu inside of the header
 .portfolio_menu_navigation {
   width: 220px;
   height: var(--width);
@@ -39,45 +44,56 @@
   transition: transform .2s;
 }
 
+// Summary inside of the details of menu
 summary {
   font-weight: 700;
-  font-size: 24px;
+  @include detailFonts;
 }
 
+// Removing the arrow in front of the summary
 summary::-webkit-details-marker {
   display: none;
 }
 
+// list navigation
 .portfolio_list_menu {
   text-align: var(--text-align);
 }
 
+// list of the menu
 .portfolio_list_menu_item {
   padding-top: var(--base-padding);
   padding-bottom: var(--base-padding);
 }
 
-input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
-  transform: translateX(0%);
-}
-
+// The list links
 .portfolio_list_menu_link {
   color: var(--base-color);
 }
 
+
+// Checkbox when it is checked
+input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
+  transform: translateX(0%);
+}
+
+// Checkbox when it is not checked
 [type="checkbox"]:checked ~ main {
   z-index: 1;
 }
 
+// Hidding the checkbox
 .menu_checkbox {
   visibility: var(--visibility);
 }
 
+// Label of the checkbox
 .label_menu {
   color: transparent;
   position: var(--parent-position);
 }
 
+// Label background using pseudo element
 .label_menu::before {
   content: '';
   display: block;
@@ -89,16 +105,20 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   @include background('../web_icons/icon_menu.svg');
 }
 
+// Desktop
 @media (min-width: 960px) {
+  // Header container
   .portfolio_heading__container {
     @include container;
     justify-content: space-between;
   }
 
+  // Changing the logo when it is desktop
   .portfolio_logo_link {
     @include headingFonts;
   }
 
+  // Menu in desktop
   .portfolio_menu_navigation {  
     transform: translateX(0);
     background-color: transparent;
@@ -109,22 +129,26 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     padding: calc(var(--padding) * 0);
   }
 
+  // Summary
   summary {
     display: none;
   }
 
+  // List of menu
   .portfolio_list_menu {
     @include displayFlex;
     justify-content: space-around;
   }
 
-  .label_menu {
-    visibility: var(--visibility);
-  }
-
+  // The link of menu 
   .portfolio_list_menu_link {
     font-weight: 700;
     @include detailFonts;
     color: var(--logo-color);
+  }
+
+  // Label
+  .label_menu {
+    visibility: var(--visibility);
   }
 }

@@ -3,29 +3,34 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// A div inside of the container 
 .portfolio_masthead__wrap {
   @include displayFlex;
   flex-direction: column;
   padding-top: 31px;
 }
 
+// Masthead heading
 .portfolio_masthead__heading {
   @include headingFonts;
   order: 2;
 }
 
+// Masthead intro
 .portfolio_masthead__intro {
   font-size: 18px;
   line-height: 32px;
   order: 3;
 }
 
+// Masthead back
 .portfolio_masthead_back {
   position: var(--parent-position);
   padding-left: calc(var(--base-padding) * 2);
   order: 1;
 }
 
+// Masthead back with the arrow left using pseudo ::before
 .portfolio_masthead_back::before {
   content: '';
   display: block;
@@ -35,15 +40,20 @@
   left: -100%;
 }
 
+// Desktop
 @media (min-width: 960px) {
+
+  // Masthead container
   .portfolio_masthead__container {
     @include container;
   }
 
+  // A div inside of the container 
   .portfolio_masthead__wrap {
     padding-right: 50%;
   }
 
+  // Masthead heading
   .portfolio_masthead__heading {
     font-size: 72px;
     line-height: 80px;
@@ -51,6 +61,7 @@
     white-space: pre-line; 
   }
 
+  // Masthead intro
   .portfolio_masthead__intro {
     font-size: 18px;
     line-height: 32px;
