@@ -41,7 +41,7 @@
 }
 
 // Desktop
-@media (min-width: 960px) {
+@media (min-width: $min-width) {
 
   // Masthead container
   .portfolio_masthead__container {

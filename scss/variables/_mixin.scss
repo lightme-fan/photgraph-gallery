@@ -1,3 +1,5 @@
+@import './variables';
+
 // List
 @mixin reset-list($padding: 0, $margin: 0, $style: none) {
   margin: $margin;
@@ -45,13 +47,21 @@
   right: $right;
 }
 
+// Heading font
 @mixin  headingFonts($family: 'DM Serif Display', $size: 40px, $line-height: 48px) {
   font-family: $family;
   font-size: $size;
   line-height: $line-height;
 }
 
+// Default font
 @mixin  detailFonts($size: 16px, $line-height: 24px) {
   font-size: $size;
   line-height: $line-height;
+}
+
+// Icons
+@mixin icons {
+  background-size: #{$background-size};
+  background-position: #{$background-position};
 }

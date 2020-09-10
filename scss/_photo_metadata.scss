@@ -32,7 +32,7 @@
 }
 
 // Desktop
-@media (min-width: 960px) {
+@media (min-width: $min-width) {
 
   // Metadata Container
   .portfolio_metadata__container {

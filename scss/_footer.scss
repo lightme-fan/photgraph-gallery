@@ -109,7 +109,7 @@
 }
 
 // Desktop
-@media (min-width: 960px) {
+@media (min-width: $min-width) {
 
   // Border inside of the footer in desktop
   .portfolio_footer::after {

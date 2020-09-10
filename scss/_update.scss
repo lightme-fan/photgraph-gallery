@@ -76,7 +76,7 @@
 }
 
 // Desktop
-@media (min-width: 960px) {
+@media (min-width: $min-width) {
 
   // Newsletter container
   .portfolio_newsletter__container {
