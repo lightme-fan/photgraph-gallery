@@ -1,0 +1,44 @@
+@import 'variables/variables';
+@import 'variables/fonts';
+@import 'variables/mixin';
+@import 'custom_property';
+
+// Checkbox when it is checked
+input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
+  transform: translateX(0%);
+}
+
+// Checkbox when it is not checked
+[type="checkbox"]:checked ~ .portfolio_details {
+  z-index: 1;
+}
+
+// Hiding the menu when the header or the label is checked
+[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
+  @include absolute-position;
+  width: var(--width);
+  height: var(--height);
+}
+
+// Hidding the checkbox
+.menu_checkbox {
+  visibility: var(--visibility);
+}
+
+// Label of the checkbox
+.label_menu {
+  color: transparent;
+  position: var(--parent-position);
+}
+
+// Label background using pseudo element
+.label_menu::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  @include absolute-position;
+  top: calc(100% / 4);
+  left: unset;
+  @include background('../web_icons/icon_menu.svg');
+}

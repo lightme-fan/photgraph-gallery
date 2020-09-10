@@ -71,40 +71,6 @@ summary::-webkit-details-marker {
   color: var(--base-color);
 }
 
-
-// Checkbox when it is checked
-input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
-  transform: translateX(0%);
-}
-
-// Checkbox when it is not checked
-[type="checkbox"]:checked ~ main {
-  z-index: 1;
-}
-
-// Hidding the checkbox
-.menu_checkbox {
-  visibility: var(--visibility);
-}
-
-// Label of the checkbox
-.label_menu {
-  color: transparent;
-  position: var(--parent-position);
-}
-
-// Label background using pseudo element
-.label_menu::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  @include absolute-position;
-  top: calc(100% / 4);
-  left: unset;
-  @include background('../web_icons/icon_menu.svg');
-}
-
 // Desktop
 @media (min-width: $min-width) {
   // Header container
