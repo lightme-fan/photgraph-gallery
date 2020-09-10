@@ -1,29 +1,65 @@
 
 :root {
+  // Reset anchor
   --reset-anchor: #{$anchor-text-decoration};
+  
+  // Base padding and margin 
   --base-padding: #{$padding};
   --base-margin: #{$margin};
+
+  // Logo background
   --logo-color: #{$logo-base-color};
-  --base-visibility: $visibility;
+
+  // Border
   --basic-border: #{$border};
+
+  // Parent position
   --parent-position: #{$parent-position};
+
+  // Background color of the header
   --header-bg: #{$header-bg-color};
+
+  // Text transform
   --text-transform: #{$text-transform};
+
+  // Default color. It is black.
   --base-color: #{$base-color};
+
+  // Border radius
   --border-radius: #{$border};
+
+  // Default text align
   --basic-text-align: #{$text-align};
+
+  // Default backgraound color
   --default-bg-color: #{$default-bg-color};
+
+  // Default width and height which is 100%
   --width: #{$default-width};
   --height: #{$default-height};
+
+  // Visibility
   --visibility: #{$visibility};
+
+  // Opacity
   --opacity: #{$opacity};
+
+  // Space between all the images
   --image-left-space: #{$image-left-space};
+
+  // width of the images
   --image-width: #{$image-width};
   --large-width: #{$large-width};
   --large-height: #{$large-height};
   --small-width: #{small-width};
   --small-height: #{small-height};
+
+  // Background of newsletter
   --newsletter-bg: #{$newsletter-bg};
+
+  // Width of button
   --button-width: #{$button-width};
+
+  // Default align-self
   --default-align-self: #{$default-align-self};
 }

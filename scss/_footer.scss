@@ -46,6 +46,11 @@
   padding-top: var(--base-padding);
 }
 
+// Home inside of the footer
+.portfolio_home__link {
+  color: var(--base-color);
+}
+
 // Footer nav (Menu). This is details element
 .portfolio_footer__home {
   padding-top: calc(var(--base-padding) * 3);
