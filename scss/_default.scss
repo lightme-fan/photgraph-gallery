@@ -3,25 +3,29 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
-
+// Body
 body {
   font-family: 'DM sans';
   font-weight: 400;
   margin: calc(var(--base-margin) * 0);
 }
 
+// All the container
 .container {
   padding: var(--base-padding);
 }
 
+// Ul
 ul {
   @include reset-list;
 }
 
+// Anchor
 a {
   text-decoration: var(--reset-anchor);
 }
 
+// Social media
 .portfolio__media {
   @include displayFlex;
   justify-content: start;
