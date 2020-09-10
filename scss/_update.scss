@@ -3,31 +3,37 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// Background color of newsletter
 .portfolio_newsletter {
   background-color: var(--newsletter-bg);
 }
 
+// Newsletter container
 .portfolio_newsletter__container {
   padding: var(--base-padding);
   padding-top: 63px;
   padding-bottom: 54px;
 }
 
+// Newsletter header
 .portfolio_newsletter__header {
   @include displayFlex;
   flex-direction: column-reverse;
 }
 
+// Newsletter heading
 .portfolio_newsletter__heading {
   @include headingFonts;
 }
 
+// Newsletter Last
 .portfolio_newsletter__hint {
   @include detailFonts;
   letter-spacing: 0.3em;
   text-transform: var(--text-transform);
 }
 
+// Newsletter fieldset
 .portfolio_newsletter__email {
   border: none;
   padding: calc(var(--base-padding) * 0);
@@ -35,6 +41,7 @@
   flex-direction: column;
 }
 
+// Fieldset label
 .portfolio_newsletter__label {
   font-weight: 700;
   font-size: 12px;
@@ -43,6 +50,7 @@
   padding-bottom: var(--base-padding);
 } 
 
+// Fieldset input
 .portfolio_newsletter__input {
   padding: var(--base-padding);
   border: none;
@@ -50,10 +58,12 @@
   width: 90%;
 }
 
-.portfolio_newsletter__input > div {
+// Fieldset input value
+.portfolio_newsletter__input [type="email"] {
   opacity: var(--opacity);
 }
 
+// Subscribe button
 .portfolio_newsletter_subscribe {
   background-color: var(--header-bg);
   color: var(--default-bg-color);
@@ -64,32 +74,34 @@
   border-radius: var(--border-radius);
   margin-top: var(--base-margin);
 }
-.portfolio_newsletter__input [type="email"] {
-  opacity: var(--opacity);
-}
 
-
+// Desktop
 @media (min-width: 960px) {
+
+  // Newsletter container
   .portfolio_newsletter__container {
     @include container;
     @include displayGrid;
     grid-template-columns: 2fr 2fr 1fr;
   }
 
+  // Newsletter heading
   .portfolio_newsletter__heading {
     font-size: 52px;
     line-height: 64px;
     margin: calc(var(--base-margin) * 0);
   }
 
+  // Newsletter fieldset. 76 is the height of the 
   .portfolio_newsletter__email {
-    align-self: center;
-    padding-left: calc(100% * 76 / 346);
+    align-self: var(--default-align-self);
+    padding-left: 100% * $fieldset-height / $fieldset-width;
   }
 
+  // Subscribe button
   .portfolio_newsletter_subscribe {
-    height: 48px;
-    align-self: center;
+    height: var(--button-width);
+    align-self: var(--default-align-self);
     margin-top: calc(var(--base-margin) * (2 + 1/2));
   }
 }
