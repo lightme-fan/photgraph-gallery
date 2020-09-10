@@ -1,5 +1,6 @@
 @import 'variables/fonts';
 
+// Looping the fonts
 @each $font in $fonts {
   @font-face {
     font-family: map-get($font, 'family');
