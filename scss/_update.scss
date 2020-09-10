@@ -4,7 +4,7 @@
 @import 'custom_property';
 
 .portfolio_newsletter {
-  background-color: #FFDD78;
+  background-color: var(--newsletter-bg);
 }
 
 .portfolio_newsletter__container {
@@ -38,7 +38,7 @@
 .portfolio_newsletter__label {
   font-weight: 700;
   font-size: 12px;
-  line-height: 16px;
+  @include detailFonts;
   text-transform: var(--text-transform);
   padding-bottom: var(--base-padding);
 } 
@@ -90,5 +90,6 @@
   .portfolio_newsletter_subscribe {
     height: 48px;
     align-self: center;
+    margin-top: calc(var(--base-margin) * (2 + 1/2));
   }
 }
