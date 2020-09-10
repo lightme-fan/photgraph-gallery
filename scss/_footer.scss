@@ -12,7 +12,7 @@
 .portfolio_footer::after {
   content: '';
   display: block;
-  width: 100%;
+  width: var(--width);
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
   @include absolute-position;
