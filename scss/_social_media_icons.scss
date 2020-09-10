@@ -3,6 +3,11 @@
 @import 'variables/mixin';
 @import 'variables/custom_property';
 
+// Max width of li
+.portfolio__about_media_list {
+  max-width: 18px;
+}
+
 // All icons
 .icon {
   color: transparent;
@@ -12,6 +17,7 @@
 .facebook {
   @include background('../web_icons/icon_facebook.svg');
   @include icons;
+  background-position: 0;
 }
 
 // Twitter

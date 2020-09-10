@@ -404,8 +404,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   margin-right: var(--image-left-space); }
 
 @media (min-width: 960px) {
-  .picture {
-    padding-right: calc(var(--image-left-space) * 0); } }
+  .portfolio_image {
+    margin-right: calc(var(--image-left-space) * 0); } }
 
 :root {
   --reset-anchor: none;
@@ -548,6 +548,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   --button-width: 48px;
   --default-align-self: center; }
 
+.portfolio__about_media_list {
+  max-width: 18px; }
+
 .icon {
   color: transparent; }
 
@@ -557,6 +560,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: auto;
+  background-position: 50% 50%;
   background-position: 0; }
 
 .twitter {
@@ -565,7 +569,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: auto;
-  background-position: 0; }
+  background-position: 50% 50%; }
 
 .instegram {
   background-image: url("../web_icons/icon_instagram.svg");
@@ -573,7 +577,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: auto;
-  background-position: 0; }
+  background-position: 50% 50%; }
 
 :root {
   --reset-anchor: none;

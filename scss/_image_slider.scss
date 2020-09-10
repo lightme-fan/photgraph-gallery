@@ -49,7 +49,7 @@
 // Desktop
 @media (min-width: $min-width) {
   // A space between the images
-  .picture {
-    padding-right: calc(var(--image-left-space) * 0);
+  .portfolio_image {
+    margin-right: calc(var(--image-left-space) * 0);
   }
 }
