@@ -50,34 +50,6 @@
   --button-width: 48px;
   --default-align-self: center; }
 
-:root {
-  --reset-anchor: none;
-  --base-padding: 1rem;
-  --base-margin: 1rem;
-  --logo-color: #ffffff;
-  --base-visibility: $visibility;
-  --basic-border: 5px;
-  --parent-position: relative;
-  --header-bg: #434CCC;
-  --text-transform: uppercase;
-  --base-color: #000000;
-  --border-radius: 5px;
-  --basic-text-align: center;
-  --default-bg-color: #ffffff;
-  --width: 100%;
-  --height: 100%;
-  --visibility: hidden;
-  --opacity: 0.5;
-  --image-left-space: 5px;
-  --image-width: 137px;
-  --large-width: 1170px;
-  --large-height: 728px;
-  --small-width: small-width;
-  --small-height: small-height;
-  --newsletter-bg: #FFDD78;
-  --button-width: 48px;
-  --default-align-self: center; }
-
 body {
   font-family: 'DM sans';
   font-weight: 400;
@@ -248,10 +220,10 @@ summary::-webkit-details-marker {
 input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   transform: translateX(0%); }
 
-[type="checkbox"]:checked ~ main {
+[type="checkbox"]:checked ~ .portfolio_details {
   z-index: 1; }
 
-[type="checkbox"]:checked ~ header label {
+[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   position: absolute;
   top: 0;
   left: 0;
