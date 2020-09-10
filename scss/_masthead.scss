@@ -28,6 +28,7 @@
   position: var(--parent-position);
   padding-left: calc(var(--base-padding) * 2);
   order: 1;
+  opacity: var(--opacity);
 }
 
 // Masthead back with the arrow left using pseudo ::before

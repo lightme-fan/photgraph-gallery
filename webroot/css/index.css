@@ -301,7 +301,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 .portfolio_masthead_back {
   position: var(--parent-position);
   padding-left: calc(var(--base-padding) * 2);
-  order: 1; }
+  order: 1;
+  opacity: var(--opacity); }
 
 .portfolio_masthead_back::before {
   content: '';
