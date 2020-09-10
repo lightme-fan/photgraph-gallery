@@ -3,24 +3,25 @@
 @import 'variables/mixin';
 @import 'custom_property';
 
+// All icons
 .icon {
   color: transparent;
 }
 
+// Facebook
 .facebook {
   @include background('../web_icons/icon_facebook.svg');
-  background-size: auto;
-  background-position: 0;
+  @include icons;
 }
 
+// Twitter
 .twitter {
   @include background('../web_icons/icon_twitter.svg');
-  background-size: auto;
-  background-position: 0;
+  @include icons;
 }
 
+// Instagram
 .instegram {
   @include background('../web_icons/icon_instagram.svg');
-  background-size: auto;
-  background-position: 0;
+  @include icons;
 }
