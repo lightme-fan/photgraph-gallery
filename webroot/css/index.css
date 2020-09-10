@@ -388,9 +388,6 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none; }
 
-.picture {
-  padding-right: var(--image-left-space); }
-
 .image_slider_active {
   width: 100%;
   border-radius: var(--basic-border);
@@ -403,7 +400,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 .portfolio_image {
   border-radius: var(--basic-border);
-  width: var(--image-width); }
+  max-width: var(--image-width);
+  margin-right: var(--image-left-space); }
 
 @media (min-width: 960px) {
   .picture {

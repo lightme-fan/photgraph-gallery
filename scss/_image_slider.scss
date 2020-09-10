@@ -31,11 +31,6 @@
   display: none;
 }
 
-// A space between the images
-.picture {
-  padding-right: var(--image-left-space);
-}
-
 // This is for the active image
 .image_slider_active {
   width: $default-width;
@@ -47,7 +42,8 @@
 // width of the images
 .portfolio_image {
   border-radius: var(--basic-border);
-  width: var(--image-width);
+  max-width: var(--image-width);
+  margin-right: var(--image-left-space);
 }
 
 // Desktop
