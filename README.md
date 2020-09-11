@@ -15,7 +15,7 @@ In this project, I have the twelve sass files and one variable folder.
     - default.scss
     - checkbox.scss
     - font_face.scss
-    - headre.scss
+    - header.scss
     - masthead.scss
     - image_slider.scss
     - photo_metadata.scss
