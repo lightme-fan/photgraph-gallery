@@ -58,6 +58,11 @@
   width: 90%;
 }
 
+// Changing the color of the input value
+input[type="email"] {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 // Fieldset input value
 .portfolio_newsletter__input [type="email"] {
   opacity: var(--opacity);

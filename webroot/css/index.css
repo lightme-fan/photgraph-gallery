@@ -646,6 +646,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   border-radius: var(--border-radius);
   width: 90%; }
 
+input[type="email"] {
+  color: rgba(0, 0, 0, 0.5); }
+
 .portfolio_newsletter__input [type="email"] {
   opacity: var(--opacity); }
 
