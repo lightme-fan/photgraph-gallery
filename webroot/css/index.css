@@ -646,12 +646,16 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
 
 .portfolio_newsletter__input {
   padding: var(--base-padding);
+  padding-top: calc(var(--base-padding) - 6px);
   border: none;
   border-radius: var(--border-radius);
   width: 90%; }
 
 input[type="email"] {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'DM Sans';
+  font-size: 16px;
+  line-height: 24px; }
 
 .portfolio_newsletter__input [type="email"] {
   opacity: var(--opacity); }
@@ -659,12 +663,14 @@ input[type="email"] {
 .portfolio_newsletter_subscribe {
   background-color: var(--header-bg);
   color: var(--default-bg-color);
-  padding: var(--base-padding);
-  padding-left: calc(var(--base-padding) * 2);
-  padding-right: calc(var(--base-padding) * 2);
+  padding: calc(var(--base-padding) * 2);
+  padding-top: var(--base-padding);
   border: none;
   border-radius: var(--border-radius);
-  margin-top: var(--base-margin); }
+  margin-top: var(--base-margin);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700; }
 
 @media (min-width: 960px) {
   .portfolio_newsletter__container {
