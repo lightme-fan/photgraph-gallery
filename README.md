@@ -5,7 +5,7 @@ This is a short summary of my project.
 In this project, I have the twelve sass files and one variable folder.
 
 ## Structures
-1. ### *Variables folder*. Inside of this folder, I have three files which are:
+1. ### *Variables folder*. Inside of this folder, I have four files which are:
     - fonts.scss
     - variables.scss
     - mixin.scss
