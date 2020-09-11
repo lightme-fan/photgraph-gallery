@@ -12,5 +12,5 @@ const slider = (e) => {
   }
 }
 
-// Event listner
+// Event listner for images by looping through them
 images.forEach(image => image.addEventListener(('click'), slider));
