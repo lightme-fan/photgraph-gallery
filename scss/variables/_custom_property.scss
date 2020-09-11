@@ -1,5 +1,8 @@
 
 :root {
+  // Body background color
+  --body-bg-color: #{$body-bg-color};
+
   // Reset anchor
   --reset-anchor: #{$anchor-text-decoration};
   

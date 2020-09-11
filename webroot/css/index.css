@@ -23,6 +23,7 @@
   src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Italic.woff") format("woff"); }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -52,7 +53,8 @@
 body {
   font-family: 'DM sans';
   font-weight: 400;
-  margin: calc(var(--base-margin) * 0); }
+  margin: calc(var(--base-margin) * 0);
+  background-color: var(--body-bg-color); }
 
 .container {
   padding: var(--base-padding); }
@@ -72,6 +74,7 @@ a {
   justify-content: start; }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -188,6 +191,7 @@ summary::-webkit-details-marker {
     visibility: var(--visibility); } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -254,6 +258,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-size: cover; }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -336,6 +341,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     line-height: 32px; } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -404,6 +410,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     margin-right: calc(var(--image-left-space) * 0); } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -463,6 +470,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     padding-block-start: 88px; } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -515,6 +523,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
     margin-top: calc(var(--base-margin) * 0); } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -573,6 +582,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   background-position: 50% 50%; }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
@@ -684,6 +694,7 @@ input[type="email"] {
     margin-top: calc(var(--base-margin) * (2 + 1/2)); } }
 
 :root {
+  --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
   --base-padding: 1rem;
   --base-margin: 1rem;
