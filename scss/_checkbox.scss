@@ -9,13 +9,15 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 }
 
 // Checkbox when it is not checked
-[type="checkbox"]:checked ~ .portfolio_details {
+input[type="checkbox"]:checked ~ .portfolio_details {
   z-index: 1;
 }
 
 // Hiding the menu when the header or the label is checked
-[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
+input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   @include absolute-position;
+  background-position: calc(100% - var(--base-padding)) 27px;
+  color: transparent;
   width: var(--width);
   height: var(--height);
 }
@@ -29,16 +31,7 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 .label_menu {
   color: transparent;
   position: var(--parent-position);
-}
-
-// Label background using pseudo element
-.label_menu::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  @include absolute-position;
-  top: calc(100% / 4);
-  left: unset;
   @include background('../web_icons/icon_menu.svg');
+  background-position: 100%;
+  background-size: auto;
 }

@@ -221,15 +221,17 @@ summary::-webkit-details-marker {
 input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
   transform: translateX(0%); }
 
-[type="checkbox"]:checked ~ .portfolio_details {
+input[type="checkbox"]:checked ~ .portfolio_details {
   z-index: 1; }
 
-[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
+input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  background-position: calc(100% - var(--base-padding)) 27px;
+  color: transparent;
   width: var(--width);
   height: var(--height); }
 
@@ -238,24 +240,13 @@ input[type="checkbox"]:checked ~ .portfolio_heading .portfolio_menu_navigation {
 
 .label_menu {
   color: transparent;
-  position: var(--parent-position); }
-
-.label_menu::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: calc(100% / 4);
-  left: unset;
+  position: var(--parent-position);
   background-image: url("../web_icons/icon_menu.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 100%;
+  background-size: auto; }
 
 :root {
   --body-bg-color: rgba(67, 76, 204, 0.05);
