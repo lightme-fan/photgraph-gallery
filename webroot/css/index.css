@@ -396,6 +396,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   max-width: var(--image-width);
   margin-right: var(--image-left-space); }
 
+.portfolio_image:hover {
+  transform: rotateX(0.5turn); }
+
 @media (min-width: 960px) {
   .portfolio_image {
     margin-right: calc(var(--image-left-space) * 0); } }

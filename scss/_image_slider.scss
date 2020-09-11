@@ -46,6 +46,11 @@
   margin-right: var(--image-left-space);
 }
 
+// Animation
+.portfolio_image:hover {
+  transform: rotateX(0.5turn);
+}
+
 // Desktop
 @media (min-width: $min-width) {
   // A space between the images
