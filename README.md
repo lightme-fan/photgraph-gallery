@@ -1,6 +1,6 @@
 # Hello! 
 
-This is short summary of my project.
+This is a short summary of my project.
 
 In this project, I have the twelve sass files and one variable folder.
 
