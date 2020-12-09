@@ -381,6 +381,12 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none; }
 
+.portfolio_image {
+  border-radius: var(--basic-border);
+  max-width: var(--image-width);
+  margin-right: var(--image-left-space);
+  opacity: var(--opacity); }
+
 .image_slider_active {
   width: 100%;
   border-radius: var(--basic-border);
@@ -391,11 +397,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   right: 0;
   top: -1.17647%; }
 
-.portfolio_image {
-  border-radius: var(--basic-border);
-  max-width: var(--image-width);
-  margin-right: var(--image-left-space);
-  opacity: var(--opacity); }
+.picture:nth-of-type(2) > .portfolio_image {
+  opacity: 1; }
 
 .portfolio_image:hover {
   transform: rotateX(0.5turn); }

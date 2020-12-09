@@ -31,6 +31,15 @@
   display: none;
 }
 
+// width of the images
+.portfolio_image {
+  border-radius: var(--basic-border);
+  max-width: var(--image-width);
+  margin-right: var(--image-left-space);
+  opacity: var(--opacity);
+}
+
+
 // This is for the active image
 .image_slider_active {
   width: $default-width;
@@ -39,12 +48,8 @@
   top: 100% * -1 / ($small-height / 1px);
 }
 
-// width of the images
-.portfolio_image {
-  border-radius: var(--basic-border);
-  max-width: var(--image-width);
-  margin-right: var(--image-left-space);
-  opacity: var(--opacity);
+.picture:nth-of-type(2) > .portfolio_image  {
+  opacity: 1;
 }
 
 // Animation

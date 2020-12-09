@@ -9,6 +9,7 @@ const slider = (e) => {
   const clickedImage = e.target;
   if (clickedImage) {
     activeImage.src = clickedImage.src;
+    activeImage.classList.add('portfolio_image_on_active')
   }
 }
 
