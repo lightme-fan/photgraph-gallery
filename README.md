@@ -8,7 +8,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/lightme-fan/front-end-finals/tree/main">
+    <a href="https://github.com/lightme-fan/front-end-finals">
       Solution
     </a>
   </h3>
