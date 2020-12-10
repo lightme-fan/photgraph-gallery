@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://fanilo-github-jobs.netlify.app/">
+    <a href="https://fanilo-photograph.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -86,5 +86,5 @@ $ npm start
 
 ## Contact
 
--   Website [Github jobs](https://fanilo-github-jobs.netlify.app/)
+-   Website [Github jobs](https://fanilo-photograph.netlify.app/)
 -   GitHub [lightme-fan](https://github.com/lightme-fan)
