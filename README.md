@@ -86,5 +86,5 @@ $ npm start
 
 ## Contact
 
--   Website [Github jobs](https://fanilo-photograph.netlify.app/)
+-   Website [Photograph](https://fanilo-photograph.netlify.app/)
 -   GitHub [lightme-fan](https://github.com/lightme-fan)
