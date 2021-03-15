@@ -4,11 +4,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://fanilo-github-jobs.netlify.app/">
+    <a href="https://fanilo-photograph.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/lightme-fan/front-end-finals/tree/main">
+    <a href="https://github.com/lightme-fan/front-end-finals">
       Solution
     </a>
   </h3>
@@ -86,5 +86,5 @@ $ npm start
 
 ## Contact
 
--   Website [Github jobs](https://fanilo-github-jobs.netlify.app/)
+-   Website [Photograph](https://fanilo-photograph.netlify.app/)
 -   GitHub [lightme-fan](https://github.com/lightme-fan)
