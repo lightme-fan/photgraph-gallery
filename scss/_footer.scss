@@ -71,6 +71,7 @@
 // Blog entries
 .portfolio_footer__blog_entry__item {
   @include displayFlex;
+  justify-content: unset;
   margin-bottom: var(--base-margin);
   width: var(--width);
 }

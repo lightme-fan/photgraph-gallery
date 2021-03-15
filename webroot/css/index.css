@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "DM Serif Display";
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
   src: local("DM Serif Display"), local("DM Serif Display"), local("DMSerifDisplay"), url("../fonts/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/DMSerifDisplay-Italic.woff") format("woff"); }
 
@@ -72,6 +72,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
   justify-content: start; }
+
+button {
+  cursor: pointer; }
 
 :root {
   --body-bg-color: rgba(67, 76, 204, 0.05);
@@ -298,7 +301,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   position: var(--parent-position);
   padding-left: calc(var(--base-padding) * 2);
   order: 1;
-  opacity: var(--opacity); }
+  opacity: var(--opacity);
+  cursor: pointer; }
 
 .portfolio_masthead_back::before {
   content: '';
@@ -313,7 +317,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: unset;
-  left: -100%; }
+  left: -100%;
+  cursor: pointer; }
 
 @media (min-width: 960px) {
   .portfolio_masthead__container {
@@ -778,6 +783,7 @@ input[type="email"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-content: unset;
   margin-bottom: var(--base-margin);
   width: var(--width); }
 

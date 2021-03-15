@@ -31,3 +31,7 @@ a {
   @include displayFlex;
   justify-content: start;
 }
+
+button {
+  cursor: pointer;
+}

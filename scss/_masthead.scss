@@ -29,6 +29,7 @@
   padding-left: calc(var(--base-padding) * 2);
   order: 1;
   opacity: var(--opacity);
+  cursor: pointer;
 }
 
 // Masthead back with the arrow left using pseudo ::before
@@ -39,6 +40,7 @@
   @include background('../web_icons/icon_arrow_left.svg');
   background-size: unset;
   left: -100%;
+  cursor: pointer;
 }
 
 // Desktop
