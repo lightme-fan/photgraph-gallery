@@ -76,6 +76,10 @@ a {
 button {
   cursor: pointer; }
 
+button:active, button:focus {
+  outline: none;
+  border: none; }
+
 :root {
   --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
@@ -126,6 +130,9 @@ button {
   text-transform: var(--text-transform);
   color: var(--logo-color); }
 
+.portfolio_logo_link:hover {
+  font-size: 41px; }
+
 .portfolio_menu_navigation {
   width: 220px;
   height: var(--width);
@@ -150,6 +157,10 @@ summary {
 summary::-webkit-details-marker {
   display: none; }
 
+summary:active {
+  border: none;
+  outline: none; }
+
 .portfolio_list_menu {
   text-align: var(--text-align); }
 
@@ -159,6 +170,9 @@ summary::-webkit-details-marker {
 
 .portfolio_list_menu_link {
   color: var(--base-color); }
+
+.portfolio_list_menu_link:hover {
+  font-weight: 700; }
 
 @media (min-width: 960px) {
   .portfolio_heading__container {
@@ -190,6 +204,8 @@ summary::-webkit-details-marker {
     font-size: 16px;
     line-height: 24px;
     color: var(--logo-color); }
+  .portfolio_list_menu_link:hover {
+    font-size: 17px; }
   .label_menu {
     visibility: var(--visibility); } }
 
@@ -238,6 +254,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   width: var(--width);
   height: var(--height); }
 
+input[type="checkbox"]:checked ~ .portfolio_heading .label_menu:hover {
+  background-size: 4%; }
+
 .menu_checkbox {
   visibility: var(--visibility); }
 
@@ -249,7 +268,11 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  background-size: auto; }
+  background-size: auto;
+  cursor: pointer; }
+
+.label_menu:hover {
+  background-size: 26%; }
 
 :root {
   --body-bg-color: rgba(67, 76, 204, 0.05);
@@ -319,6 +342,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   background-size: unset;
   left: -100%;
   cursor: pointer; }
+
+.portfolio_masthead_back:hover {
+  font-weight: 700; }
 
 @media (min-width: 960px) {
   .portfolio_masthead__container {
@@ -390,7 +416,11 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   border-radius: var(--basic-border);
   max-width: var(--image-width);
   margin-right: var(--image-left-space);
-  opacity: var(--opacity); }
+  opacity: var(--opacity);
+  cursor: pointer; }
+
+.portfolio_image-one {
+  opacity: 1; }
 
 .image_slider_active {
   width: 100%;
@@ -400,13 +430,16 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   left: 0;
   bottom: 0;
   right: 0;
-  top: -1.17647%; }
-
-.picture:nth-of-type(2) > .portfolio_image {
+  top: -1.17647%;
   opacity: 1; }
 
 .portfolio_image:hover {
-  transform: rotateX(0.5turn); }
+  transform: rotateX(0.5turn);
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06); }
 
 @media (min-width: 960px) {
   .portfolio_image {
@@ -584,6 +617,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   background-size: auto;
   background-position: 50% 50%; }
 
+.facebook:hover, .twitter:hover, .instegram:hover {
+  background-size: contain; }
+
 :root {
   --body-bg-color: rgba(67, 76, 204, 0.05);
   --reset-anchor: none;
@@ -678,7 +714,12 @@ input[type="email"] {
   margin-top: var(--base-margin);
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center;
+  line-height: 17px; }
+
+.portfolio_newsletter_subscribe:hover {
+  background-color: darkblue; }
 
 @media (min-width: 960px) {
   .portfolio_newsletter__container {
@@ -697,7 +738,6 @@ input[type="email"] {
     align-self: var(--default-align-self);
     padding-left: 21.96532%; }
   .portfolio_newsletter_subscribe {
-    height: var(--button-width);
     align-self: var(--default-align-self);
     margin-top: calc(var(--base-margin) * (2 + 1/2)); } }
 
@@ -730,7 +770,8 @@ input[type="email"] {
   --default-align-self: center; }
 
 .portfolio_footer {
-  position: var(--parent-position); }
+  position: var(--parent-position);
+  background-color: #fff; }
 
 .portfolio_footer::after {
   content: '';
@@ -750,6 +791,9 @@ input[type="email"] {
   max-width: 1114px;
   margin-left: auto;
   margin-right: auto; }
+
+.portfolio_footer_logo:hover {
+  font-size: 25px; }
 
 .portfolio_footer__description {
   padding-bottom: calc(var(--base-padding) * 3); }
@@ -785,7 +829,8 @@ input[type="email"] {
   justify-content: space-between;
   justify-content: unset;
   margin-bottom: var(--base-margin);
-  width: var(--width); }
+  width: var(--width);
+  cursor: pointer; }
 
 .portfolio_footer__blog_author {
   width: 70px;

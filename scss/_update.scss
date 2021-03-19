@@ -81,6 +81,12 @@ input[type="email"] {
   margin-top: var(--base-margin);
   @include detailFonts;
   font-weight: 700;
+  text-align: center;
+  line-height: 17px;
+}
+
+.portfolio_newsletter_subscribe:hover {
+  background-color: darkblue;
 }
 
 // Desktop
@@ -108,7 +114,7 @@ input[type="email"] {
 
   // Subscribe button
   .portfolio_newsletter_subscribe {
-    height: var(--button-width);
+    // height: var(--button-width);
     align-self: var(--default-align-self);
     margin-top: calc(var(--base-margin) * (2 + 1/2));
   }

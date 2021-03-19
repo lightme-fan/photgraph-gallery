@@ -31,3 +31,7 @@
   @include background('../web_icons/icon_instagram.svg');
   @include icons;
 }
+
+.facebook:hover, .twitter:hover, .instegram:hover {
+  background-size: contain;
+}

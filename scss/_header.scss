@@ -30,6 +30,10 @@
   ;
 }
 
+.portfolio_logo_link:hover {
+  font-size: 41px;
+}
+
 // Menu inside of the header
 .portfolio_menu_navigation {
   width: 220px;
@@ -55,6 +59,12 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+summary:active {
+  border: none;
+  outline: none;
+}
+
+
 // list navigation
 .portfolio_list_menu {
   text-align: var(--text-align);
@@ -69,6 +79,10 @@ summary::-webkit-details-marker {
 // The list links
 .portfolio_list_menu_link {
   color: var(--base-color);
+}
+
+.portfolio_list_menu_link:hover {
+  font-weight: 700;
 }
 
 // Desktop
@@ -111,6 +125,10 @@ summary::-webkit-details-marker {
     font-weight: 700;
     @include detailFonts;
     color: var(--logo-color);
+  }
+
+  .portfolio_list_menu_link:hover {
+    font-size: 17px;
   }
 
   // Label

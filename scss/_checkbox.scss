@@ -23,6 +23,10 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   
 }
 
+input[type="checkbox"]:checked ~ .portfolio_heading .label_menu:hover {
+  background-size: 4%;
+}
+
 // Hidding the checkbox
 .menu_checkbox {
   visibility: var(--visibility);
@@ -35,4 +39,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   @include background('../web_icons/icon_menu.svg');
   background-position: 100%;
   background-size: auto;
+  cursor: pointer;
+}
+
+.label_menu:hover {
+  background-size: 26%;
 }

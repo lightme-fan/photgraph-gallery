@@ -33,7 +33,7 @@
 
 ### My Project
 
-- You can see the demo of this project by visiting this link **https://fanilo-github-jobs.netlify.app/**.
+- You can see the demo of this project by visiting this link **https://fanilo-photograph.netlify.app/**.
 
 ## Structures
 1. ### *Variables folder*. Inside of this folder, I have four files which are:

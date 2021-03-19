@@ -6,6 +6,7 @@
 // Position relative on the footer
 .portfolio_footer {
   position: var(--parent-position);
+  background-color: #fff;
 }
 
 // This is the border after the blog entry, I use pseudo after to set it.
@@ -23,6 +24,10 @@
 // A div which wraps everything inside of the container
 .portfolio_footer__container {
   @include container;
+}
+
+.portfolio_footer_logo:hover {
+  font-size: 25px;
 }
 
 // This is a div which wraps the footer about, footer nav and the blog entry
@@ -74,6 +79,7 @@
   justify-content: unset;
   margin-bottom: var(--base-margin);
   width: var(--width);
+  cursor: pointer;
 }
 
 

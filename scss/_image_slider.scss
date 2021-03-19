@@ -37,6 +37,11 @@
   max-width: var(--image-width);
   margin-right: var(--image-left-space);
   opacity: var(--opacity);
+  cursor: pointer;
+}
+
+.portfolio_image-one {
+  opacity: 1;
 }
 
 
@@ -46,16 +51,19 @@
   border-radius: var(--basic-border);
   @include absolute-position;
   top: 100% * -1 / ($small-height / 1px);
-}
-
-.picture:nth-of-type(2) > .portfolio_image  {
   opacity: 1;
 }
 
 // Animation
 .portfolio_image:hover {
   transform: rotateX(0.5turn);
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
 }
+
 
 // Desktop
 @media (min-width: $min-width) {
