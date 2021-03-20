@@ -5,7 +5,6 @@ const images = document.querySelectorAll('.portfolio_image');
 const activeImage = document.querySelector('.image_slider_active');
 const firstImage = document.querySelector('.portfolio_image-one');
 const allImages = Array.from(document.querySelectorAll('.picture'))
-console.log(allImages);
 
 // Handling the slider
 const slider = (e) => {

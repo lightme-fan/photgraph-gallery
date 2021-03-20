@@ -130,9 +130,6 @@ button:active, button:focus {
   text-transform: var(--text-transform);
   color: var(--logo-color); }
 
-.portfolio_logo_link:hover {
-  font-size: 41px; }
-
 .portfolio_menu_navigation {
   width: 220px;
   height: var(--width);
@@ -157,7 +154,7 @@ summary {
 summary::-webkit-details-marker {
   display: none; }
 
-summary:active {
+summary:active, summary:focus {
   border: none;
   outline: none; }
 
@@ -165,14 +162,13 @@ summary:active {
   text-align: var(--text-align); }
 
 .portfolio_list_menu_item {
-  padding-top: var(--base-padding);
-  padding-bottom: var(--base-padding); }
+  padding: 1rem; }
 
 .portfolio_list_menu_link {
   color: var(--base-color); }
 
 .portfolio_list_menu_link:hover {
-  font-weight: 700; }
+  background-color: rgba(0, 0, 0, 0.01); }
 
 @media (min-width: 960px) {
   .portfolio_heading__container {
@@ -204,8 +200,13 @@ summary:active {
     font-size: 16px;
     line-height: 24px;
     color: var(--logo-color); }
-  .portfolio_list_menu_link:hover {
-    font-size: 17px; }
+  .portfolio_list_menu_item:hover, .portfolio_list_menu_link:hover {
+    background-color: #88a07d;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
   .label_menu {
     visibility: var(--visibility); } }
 
@@ -402,12 +403,16 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu:hover {
   padding-top: 62.22222%;
   position: var(--parent-position); }
 
+.prev-button {
+  position: absolute; }
+
 .portfolio_image_slider_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   overflow: auto;
-  margin: calc(var(--base-margin) * 0); }
+  margin: calc(var(--base-margin) * 0);
+  gap: 0.7%; }
 
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none; }
@@ -792,9 +797,6 @@ input[type="email"] {
   margin-left: auto;
   margin-right: auto; }
 
-.portfolio_footer_logo:hover {
-  font-size: 25px; }
-
 .portfolio_footer__description {
   padding-bottom: calc(var(--base-padding) * 3); }
 
@@ -820,8 +822,13 @@ input[type="email"] {
   display: none; }
 
 .portfolio_list_home_item {
-  padding-bottom: var(--base-padding);
+  margin-bottom: var(--base-padding);
   opacity: var(--opacity); }
+
+.portfolio_list_home .portfolio_list_home_item:hover,
+.portfolio_list_home .portfolio_list_home_item > .portfolio_list_menu_link:hover {
+  background-color: #000;
+  color: #fff; }
 
 .portfolio_footer__blog_entry__item {
   display: flex;
@@ -830,7 +837,8 @@ input[type="email"] {
   justify-content: unset;
   margin-bottom: var(--base-margin);
   width: var(--width);
-  cursor: pointer; }
+  cursor: pointer;
+  color: #000; }
 
 .portfolio_footer__blog_author {
   width: 70px;

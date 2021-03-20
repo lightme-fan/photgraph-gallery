@@ -26,10 +26,6 @@
   @include container;
 }
 
-.portfolio_footer_logo:hover {
-  font-size: 25px;
-}
-
 // This is a div which wraps the footer about, footer nav and the blog entry
 .portfolio_footer__description {
   padding-bottom: calc(var(--base-padding) * 3);
@@ -69,8 +65,14 @@
 
 // This is the list of the menu inside of footer
 .portfolio_list_home_item {
-  padding-bottom: var(--base-padding);
+  margin-bottom: var(--base-padding);
   opacity: var(--opacity);  
+}
+
+.portfolio_list_home .portfolio_list_home_item:hover,
+.portfolio_list_home .portfolio_list_home_item > .portfolio_list_menu_link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 // Blog entries
@@ -80,6 +82,7 @@
   margin-bottom: var(--base-margin);
   width: var(--width);
   cursor: pointer;
+  color: #000;
 }
 
 

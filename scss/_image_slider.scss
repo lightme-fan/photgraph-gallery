@@ -19,11 +19,16 @@
   position: var(--parent-position);
 }
 
+.prev-button {
+  position: absolute;
+}
+
 // A div which wrap the images
 .portfolio_image_slider_list {
   @include displayFlex;
   overflow: auto;
   margin: calc(var(--base-margin) * 0);
+  gap: 0.7%;
 }
 
 // Removing the scroll bar at the bottom of the image list
