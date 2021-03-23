@@ -13,6 +13,9 @@
 // Masthead heading
 .portfolio_masthead__heading {
   @include headingFonts;
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 400;
   order: 2;
 }
 
@@ -20,6 +23,7 @@
 .portfolio_masthead__intro {
   font-size: 18px;
   line-height: 32px;
+  margin-bottom: 88px;
   order: 3;
 }
 
@@ -28,8 +32,11 @@
   position: var(--parent-position);
   padding-left: calc(var(--base-padding) * 2);
   order: 1;
+  margin-left: 7px;
   opacity: var(--opacity);
   cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 // Masthead back with the arrow left using pseudo ::before

@@ -14,6 +14,8 @@ body {
 // All the container
 .container {
   padding: var(--base-padding);
+  max-width: calc(619px + 227px + 324px);
+  margin: auto;
 }
 
 // Ul

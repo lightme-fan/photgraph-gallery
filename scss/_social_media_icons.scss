@@ -18,20 +18,21 @@
   @include background('../web_icons/icon_facebook.svg');
   @include icons;
   background-position: 0;
+  width: 18px;
 }
 
 // Twitter
 .twitter {
   @include background('../web_icons/icon_twitter.svg');
   @include icons;
+  background-position: 36% 4px;
+  background-size: 18px;
+  width: 18px;
 }
 
 // Instagram
 .instegram {
   @include background('../web_icons/icon_instagram.svg');
   @include icons;
-}
-
-.facebook:hover, .twitter:hover, .instegram:hover {
-  background-size: contain;
+  width: 18px;
 }

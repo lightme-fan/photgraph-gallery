@@ -31,9 +31,14 @@
   padding-bottom: calc(var(--base-padding) * 3);
 }
 
+.portfolio_footer__about {
+  padding-top: 76px;
+}
+
 // Change the logo colour into black
 .portfolio_footer_logo {
   color: var(--base-color);
+  font-weight: 400;
 }
 
 // Footer about
@@ -54,8 +59,12 @@
 
 // Footer nav (Menu). This is details element
 .portfolio_footer__home {
-  padding-top: calc(var(--base-padding) * 3);
+  padding-top: 78px;
   padding-bottom: calc(var(--base-padding) * 3);
+}
+
+.portfolio_footer__home_heading {
+  padding-bottom: 24px;
 }
 
 // Summary inside of the details
@@ -92,6 +101,8 @@
   height: 48px;
   align-self: center;
   border-radius: var(--border-radius);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 // Blog
@@ -114,7 +125,7 @@
 
 // Image insde of the second blog entry
 .portfolio_footer__blog_author:last-of-type {
-  margin-right: calc(var(--base-margin) * 4);
+  margin-right: 30px;
 }
 
 
@@ -142,12 +153,21 @@
   .portfolio_footer__home {
     padding-bottom: calc(var(--base-padding) * 0);
     justify-self: center;
+    padding-top: 48px;
   }
 
+  .portfolio_footer__about  {
+    padding: 0;
+    margin-top: -40px;
+  }
   // Footer nav item
   .portfolio_list_home {
     color: var(--base-color);
     opacity: var(--opacity);
+  }
+
+  .portfolio_footer__about_description {
+    margin-right: 4rem
   }
 
   // Copyright

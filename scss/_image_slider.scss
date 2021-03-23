@@ -6,6 +6,7 @@
 // Div container
 .portfolio_image_slider__container {
   @include container;
+  padding-bottom: 89px;
 }
 
 // Heading (h3)
@@ -55,7 +56,9 @@
   width: $default-width;
   border-radius: var(--basic-border);
   @include absolute-position;
-  top: 100% * -1 / ($small-height / 1px);
+  // top: 100% * -1 / ($small-height / 1px);
+  top: -2.17647%;
+  margin-bottom: 8px;
   opacity: 1;
 }
 
@@ -72,8 +75,10 @@
 
 // Desktop
 @media (min-width: $min-width) {
+
   // A space between the images
   .portfolio_image {
     margin-right: calc(var(--image-left-space) * 0);
   }
+
 }

@@ -3,21 +3,35 @@
 @import 'variables/mixin';
 @import 'variables/custom_property';
 
+.portfolio_carvings {
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+
 // Carving heading
 .portfolio_carving__heading {
   @include headingFonts;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+  padding-bottom: 31px;
 }
 
 // Carving summary
 .portfolio_carving__summary {
   font-size: 18px;
   line-height: 32px;
+  margin: 0;
+  padding-bottom: 31px
 }
 
 // Carving description
 .portfolio_carving_description {
   @include detailFonts;
   opacity: var(--opacity);
+  margin: 0;
+  padding-bottom: 31px;
 }
 
 // Carving sharing with social media

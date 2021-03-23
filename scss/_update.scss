@@ -24,6 +24,10 @@
 // Newsletter heading
 .portfolio_newsletter__heading {
   @include headingFonts;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 37px; 
 }
 
 // Newsletter Last
@@ -31,6 +35,7 @@
   @include detailFonts;
   letter-spacing: 0.3em;
   text-transform: var(--text-transform);
+  margin-bottom: 0;
 }
 
 // Newsletter fieldset
@@ -43,9 +48,10 @@
 
 // Fieldset label
 .portfolio_newsletter__label {
+  @include detailFonts;
   font-weight: 700;
   font-size: 12px;
-  @include detailFonts;
+  line-height: 16px;
   text-transform: var(--text-transform);
   padding-bottom: var(--base-padding);
 } 
@@ -80,9 +86,11 @@ input[type="email"] {
   border-radius: var(--border-radius);
   margin-top: var(--base-margin);
   @include detailFonts;
+  height: 48px;
   font-weight: 700;
   text-align: center;
   line-height: 17px;
+  width: 170px;
 }
 
 .portfolio_newsletter_subscribe:hover {
@@ -110,12 +118,13 @@ input[type="email"] {
   .portfolio_newsletter__email {
     align-self: var(--default-align-self);
     padding-left: 100% * $fieldset-height / $fieldset-width;
+    margin-top: 20px;
   }
 
   // Subscribe button
   .portfolio_newsletter_subscribe {
     // height: var(--button-width);
     align-self: var(--default-align-self);
-    margin-top: calc(var(--base-margin) * (2 + 1/2));
+    margin-top: 52px;
   }
 }
