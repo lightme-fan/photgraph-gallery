@@ -1,7 +1,7 @@
-@import 'variables/variables';
-@import 'variables/fonts';
-@import 'variables/mixin';
-@import 'variables/custom_property';
+@import "variables/variables";
+@import "variables/fonts";
+@import "variables/mixin";
+@import "variables/custom_property";
 
 // Div container
 .portfolio_image_slider__container {
@@ -27,9 +27,9 @@
 // A div which wrap the images
 .portfolio_image_slider_list {
   @include displayFlex;
-  overflow: auto;
   margin: calc(var(--base-margin) * 0);
   gap: 0.7%;
+  width: 100%;
 }
 
 // Removing the scroll bar at the bottom of the image list
@@ -44,12 +44,12 @@
   margin-right: var(--image-left-space);
   opacity: var(--opacity);
   cursor: pointer;
+  width: 100%;
 }
 
 .portfolio_image-one {
   opacity: 1;
 }
-
 
 // This is for the active image
 .image_slider_active {
@@ -63,22 +63,19 @@
 }
 
 // Animation
-.portfolio_image:hover {
-  transform: rotateX(0.5turn);
-  transform: scale(1.06);
-  -webkit-transform: scale(1.06);
-  -moz-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-  -o-transform: scale(1.06);
-}
-
+// .portfolio_image:hover {
+//   transform: rotateX(0.5turn);
+//   transform: scale(1.06);
+//   -webkit-transform: scale(1.06);
+//   -moz-transform: scale(1.06);
+//   -ms-transform: scale(1.06);
+//   -o-transform: scale(1.06);
+// }
 
 // Desktop
 @media (min-width: $min-width) {
-
   // A space between the images
   .portfolio_image {
     margin-right: calc(var(--image-left-space) * 0);
   }
-
 }

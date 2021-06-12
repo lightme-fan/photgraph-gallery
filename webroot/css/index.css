@@ -421,9 +421,9 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: auto;
   margin: calc(var(--base-margin) * 0);
-  gap: 0.7%; }
+  gap: 0.7%;
+  width: 100%; }
 
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none; }
@@ -433,7 +433,8 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   max-width: var(--image-width);
   margin-right: var(--image-left-space);
   opacity: var(--opacity);
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%; }
 
 .portfolio_image-one {
   opacity: 1; }
@@ -449,14 +450,6 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   top: -2.17647%;
   margin-bottom: 8px;
   opacity: 1; }
-
-.portfolio_image:hover {
-  transform: rotateX(0.5turn);
-  transform: scale(1.06);
-  -webkit-transform: scale(1.06);
-  -moz-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-  -o-transform: scale(1.06); }
 
 @media (min-width: 960px) {
   .portfolio_image {
