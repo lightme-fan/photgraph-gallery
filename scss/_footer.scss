@@ -1,7 +1,7 @@
-@import 'variables/variables';
-@import 'variables/fonts';
-@import 'variables/mixin';
-@import 'variables/custom_property';
+@import "variables/variables";
+@import "variables/fonts";
+@import "variables/mixin";
+@import "variables/custom_property";
 
 // Position relative on the footer
 .portfolio_footer {
@@ -11,7 +11,7 @@
 
 // This is the border after the blog entry, I use pseudo after to set it.
 .portfolio_footer::after {
-  content: '';
+  content: "";
   display: block;
   width: var(--width);
   height: 1px;
@@ -75,13 +75,11 @@
 // This is the list of the menu inside of footer
 .portfolio_list_home_item {
   margin-bottom: var(--base-padding);
-  opacity: var(--opacity);  
+  opacity: var(--opacity);
 }
 
-.portfolio_list_home .portfolio_list_home_item:hover,
-.portfolio_list_home .portfolio_list_home_item > .portfolio_list_menu_link:hover {
-  background-color: #000;
-  color: #fff;
+.portfolio_list_home .portfolio_list_home_item:hover {
+  opacity: 1;
 }
 
 // Blog entries
@@ -94,8 +92,7 @@
   color: #000;
 }
 
-
-// The profile of the author inside of the blog entry 
+// The profile of the author inside of the blog entry
 .portfolio_footer__blog_author {
   width: 70px;
   height: 48px;
@@ -128,21 +125,31 @@
   margin-right: 30px;
 }
 
-
 // Author of this page and the copyright
 .portfolio_builders {
   opacity: var(--opacity);
 }
 
+.portfolio_footer__blog_entry__item:hover
+  .portfolio_footer__blog_text
+  .portfolio_footer__blog_desc {
+  opacity: 1;
+}
+.portfolio_footer__blog_entry__item:hover .portfolio_footer__blog_author,
+.portfolio_footer__blog_entry__item:hover
+  .portfolio_footer__blog_text
+  .portfolio_footer__blog_updated {
+  opacity: 0.2;
+}
+
 // Desktop
 @media (min-width: $min-width) {
-
   // Border inside of the footer in desktop
   .portfolio_footer::after {
     top: calc(100% - 375px / 5);
   }
-  
-  // 
+
+  //
   .portfolio_footer__description {
     @include displayGrid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -156,7 +163,7 @@
     padding-top: 48px;
   }
 
-  .portfolio_footer__about  {
+  .portfolio_footer__about {
     padding: 0;
     margin-top: -40px;
   }
@@ -166,8 +173,13 @@
     opacity: var(--opacity);
   }
 
+  .portfolio_list_home .portfolio_list_home_item #portfolio_list_home:hover {
+    background-color: unset;
+    opacity: 1;
+  }
+
   .portfolio_footer__about_description {
-    margin-right: 4rem
+    margin-right: 4rem;
   }
 
   // Copyright

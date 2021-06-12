@@ -3,6 +3,14 @@
 @import "variables/mixin";
 @import "variables/custom_property";
 
+.picture {
+  margin-inline-end: 1%;
+}
+
+.picture:last-of-type {
+  margin-inline-end: 0;
+}
+
 // Div container
 .portfolio_image_slider__container {
   @include container;
@@ -28,13 +36,17 @@
 .portfolio_image_slider_list {
   @include displayFlex;
   margin: calc(var(--base-margin) * 0);
-  gap: 0.7%;
-  width: 100%;
+  overflow-x: auto;
 }
 
 // Removing the scroll bar at the bottom of the image list
 .portfolio_image_slider_list::-webkit-scrollbar {
   display: none;
+}
+
+.portfolio_image_slider_list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 // width of the images
@@ -44,7 +56,6 @@
   margin-right: var(--image-left-space);
   opacity: var(--opacity);
   cursor: pointer;
-  width: 100%;
 }
 
 .portfolio_image-one {
@@ -56,26 +67,26 @@
   width: $default-width;
   border-radius: var(--basic-border);
   @include absolute-position;
-  // top: 100% * -1 / ($small-height / 1px);
-  top: -2.17647%;
-  margin-bottom: 8px;
+  top: -1.6%;
   opacity: 1;
 }
 
 // Animation
-// .portfolio_image:hover {
-//   transform: rotateX(0.5turn);
-//   transform: scale(1.06);
-//   -webkit-transform: scale(1.06);
-//   -moz-transform: scale(1.06);
-//   -ms-transform: scale(1.06);
-//   -o-transform: scale(1.06);
-// }
+.portfolio_image:hover {
+  transform: rotateX(0.5turn);
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  opacity: 1;
+}
 
 // Desktop
 @media (min-width: $min-width) {
   // A space between the images
   .portfolio_image {
     margin-right: calc(var(--image-left-space) * 0);
+    width: 100%;
   }
 }

@@ -1,9 +1,9 @@
-@import 'variables/fonts';
-@import 'variables/variables';
-@import 'variables/mixin';
-@import 'variables/custom_property';
+@import "variables/fonts";
+@import "variables/variables";
+@import "variables/mixin";
+@import "variables/custom_property";
 
-// A div inside of the container 
+// A div inside of the container
 .portfolio_masthead__wrap {
   @include displayFlex;
   flex-direction: column;
@@ -41,28 +41,27 @@
 
 // Masthead back with the arrow left using pseudo ::before
 .portfolio_masthead_back::before {
-  content: '';
+  content: "";
   display: block;
   @include absolute-position;
-  @include background('../web_icons/icon_arrow_left.svg');
+  @include background("../web_icons/icon_arrow_left.svg");
   background-size: unset;
   left: -100%;
   cursor: pointer;
 }
 
 .portfolio_masthead_back:hover {
-  font-weight: 700;
+  opacity: 1;
 }
 
 // Desktop
 @media (min-width: $min-width) {
-
   // Masthead container
   .portfolio_masthead__container {
     @include container;
   }
 
-  // A div inside of the container 
+  // A div inside of the container
   .portfolio_masthead__wrap {
     padding-right: 50%;
   }
@@ -72,7 +71,7 @@
     font-size: 72px;
     line-height: 80px;
     margin-top: calc(var(--base-margin) * 0);
-    white-space: pre-line; 
+    white-space: pre-line;
   }
 
   // Masthead intro

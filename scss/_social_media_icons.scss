@@ -1,7 +1,7 @@
-@import 'variables/variables';
-@import 'variables/fonts';
-@import 'variables/mixin';
-@import 'variables/custom_property';
+@import "variables/variables";
+@import "variables/fonts";
+@import "variables/mixin";
+@import "variables/custom_property";
 
 // Max width of li
 .portfolio__about_media_list {
@@ -15,7 +15,7 @@
 
 // Facebook
 .facebook {
-  @include background('../web_icons/icon_facebook.svg');
+  @include background("../web_icons/icon_facebook.svg");
   @include icons;
   background-position: 0;
   width: 18px;
@@ -23,7 +23,7 @@
 
 // Twitter
 .twitter {
-  @include background('../web_icons/icon_twitter.svg');
+  @include background("../web_icons/icon_twitter.svg");
   @include icons;
   background-position: 36% 4px;
   background-size: 18px;
@@ -32,7 +32,7 @@
 
 // Instagram
 .instegram {
-  @include background('../web_icons/icon_instagram.svg');
+  @include background("../web_icons/icon_instagram.svg");
   @include icons;
   width: 18px;
 }
