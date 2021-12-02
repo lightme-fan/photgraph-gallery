@@ -1,6 +1,4 @@
-# Photograph
-
-<h1 align="center">Photograf</h1>
+<h1 align="center">Photograph Gallery</h1>
 
 <div align="center">
   <h3>
@@ -14,24 +12,13 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
--   [Overview](#overview)
-    -   [Built With](#built-with)
--   [Features](#features)
--   [How to use](#how-to-use)
--   [Contact](#contact)
--   [Acknowledgements](#acknowledgements)
-
 <!-- OVERVIEW -->
 
 ## Overview
 
 ![screenshot](./assets/screenshot.png)
 
-### My Project
+## Demo
 
 - You can see the demo of this project by visiting this link **https://fanilo-photograph.netlify.app/**.
 
@@ -58,18 +45,22 @@
 
 In each of these files, I import all the **files** inside of the **variables** folder.
 
-### Built With
+## Built With
 This project is build with 
   - [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - [Sass](https://sass-lang.com/)
+  - [Javascript](https://javascript.info/)
+ 
+## Features
+- Landing page where a list of galleries are displayed
+- Swiped photos by clicking left and right arrow icons or horizontaly scroolling.
 
-## How To Use
-
+## Getting started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/lightme-fan/front-end-finals/tree/main
+$ git clone https://github.com/lightme-fan/photgraph-gallery/
 
 # Install dependencies
 $ npm init
@@ -86,5 +77,5 @@ $ npm start
 
 ## Contact
 
--   Website [Photograph](https://fanilo-photograph.netlify.app/)
+-   Website [Photograph Gallery](https://fanilo-photograph.netlify.app/)
 -   GitHub [lightme-fan](https://github.com/lightme-fan)
