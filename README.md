@@ -53,7 +53,7 @@ This project is build with
  
 ## Features
 - Landing page where a list of galleries are displayed
-- Swiped photos by clicking left and right arrow icons or horizontaly scroolling.
+- Swiped photos by horizontaly scroolling.
 
 ## Getting started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
@@ -76,6 +76,4 @@ $ npm start
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
 ## Contact
-
--   Website [Photograph Gallery](https://fanilo-photograph.netlify.app/)
 -   GitHub [lightme-fan](https://github.com/lightme-fan)
