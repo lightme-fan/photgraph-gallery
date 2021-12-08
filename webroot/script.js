@@ -15,5 +15,5 @@ const slider = (e) => {
    clickedImage.style.opacity = 1;
 }
 
-// Event listner for images by looping through them
+// Event listeners for images by looping through them
 images.forEach(image => image.addEventListener(('click'), slider));
