@@ -420,6 +420,30 @@ input[type="checkbox"]:checked ~ .portfolio_heading .label_menu {
   padding-top: 62.22222%;
   position: var(--parent-position); }
 
+.button-slider {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-62px);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 50%; }
+
+.button-slider:nth-child(1) {
+  left: 8px; }
+
+.button-slider:nth-child(2) {
+  left: 100%;
+  transform: translate(-50px, -62px); }
+
+.button-slider > img {
+  width: 25px; }
+
 .prev-button {
   position: absolute; }
 
