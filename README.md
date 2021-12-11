@@ -15,11 +15,11 @@
 <!-- OVERVIEW -->
 
 ## Overview
+![photograh](https://user-images.githubusercontent.com/60210180/145669368-5bed3890-2350-44f3-b5bf-a341edac6840.png)
 
-![screenshot](./assets/screenshot.png)
+https://user-images.githubusercontent.com/60210180/145669381-3003d3b4-468b-4ca9-b31f-5e06debe68b2.mp4
 
 ## Demo
-
 - You can see the demo of this project by visiting this link **https://fanilo-photograph.netlify.app/**.
 
 ## Structures
