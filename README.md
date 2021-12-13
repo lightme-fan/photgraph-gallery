@@ -47,13 +47,13 @@ In each of these files, I import all the **files** inside of the **variables** f
 
 ## Built With
 This project is build with 
-  - [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
-  - [Sass](https://sass-lang.com/)
+  - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - [SASS](https://sass-lang.com/)
   - [Javascript](https://javascript.info/)
  
 ## Features
-- Landing page where a list of galleries are displayed
-- Swiped photos by horizontaly scroolling.
+- Landing page where a list of galleries are displayed period.
+- Swiped photos by horizontaly scroolling period.
 
 ## Getting started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
@@ -63,9 +63,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/lightme-fan/photgraph-gallery/
 
 # Install dependencies
-$ npm init
-
-$ npm install node-sass
+$ npm install
 
 # Run the app
 $ npm start
