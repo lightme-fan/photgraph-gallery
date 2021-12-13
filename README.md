@@ -52,8 +52,8 @@ This project is build with
   - [Javascript](https://javascript.info/)
  
 ## Features
-- Landing page where a list of galleries are displayed period.
-- Swiped photos by horizontaly scroolling period.
+- Landing page where a list of galleries are displayed.
+- Swiped photos by horizontaly scroolling.
 
 ## Getting started
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
